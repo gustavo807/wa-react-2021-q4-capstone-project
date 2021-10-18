@@ -1,28 +1,48 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import styled from "styled-components";
-import categories from "../../mocks/en-us/product-categories.json";
+import PropTypes from "prop-types";
 
 const Img = styled.img`
   width: 100%;
 `;
 
-function ProductCategories() {
-  const items =
-    categories &&
-    categories.results.map((category) => (
-      <div key={category.id}>
-        <h4 style={{ textAlign: "center" }}>{category.data.name}</h4>
-        <Img
-          alt={category.data.main_image.alt}
-          src={category.data.main_image.url}
-        />
-      </div>
-    ));
+const Title = styled.h1`
+  text-align: center;
+`;
+
+ProductCategories.propTypes = {
+  categories: PropTypes.array,
+};
+
+ProductCategories.defaultProps = {
+  categories: [],
+};
+
+function CategoryItem({ category }) {
+  const {
+    data: {
+      name,
+      main_image: { url, alt },
+    },
+  } = category;
+
+  return (
+    <div>
+      <h4 style={{ textAlign: "center" }}>{name}</h4>
+      <Img alt={alt} src={url} />
+    </div>
+  );
+}
+
+function ProductCategories({ categories }) {
+  const items = categories.map((category, index) => (
+    <CategoryItem key={index} category={category} data-value={index} />
+  ));
 
   return (
     <div className="product-categories">
-      <h1 style={{ textAlign: "center" }}>Product Categories</h1>
+      <Title>Product Categories</Title>
       <AliceCarousel disableButtonsControls items={items} />
     </div>
   );

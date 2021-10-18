@@ -1,19 +1,43 @@
 import React from "react";
-import ProductCard from "./ProductCard";
-import products from "../../mocks/en-us/featured-products.json";
-import "./FeaturedProducts.scss";
+import ProductItem from "./ProductItem";
+import PropTypes from "prop-types";
+import styled from "styled-components";
 
-function FeaturedProducts() {
+const Container = styled.div`
+  margin-bottom: 100px;
+  margin-top: 100px;
+`;
+
+const CardsWrapper = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 220px);
+  place-content: center;
+  gap: 1rem;
+`;
+
+const Title = styled.h1`
+  text-align: center;
+`;
+
+FeaturedProducts.propTypes = {
+  products: PropTypes.array,
+};
+
+FeaturedProducts.defaultProps = {
+  products: [],
+};
+
+function FeaturedProducts({ products }) {
   return (
-    <div className="featured-products">
-      <h1 style={{ textAlign: "center" }}>Feature Products</h1>
-      <div className="featured-products-cards">
-        {products &&
-          products.results.map((product, i) => (
-            <ProductCard key={i} product={product} />
-          ))}
-      </div>
-    </div>
+    <Container>
+      <Title>Feature Products</Title>
+      <CardsWrapper>
+        {products.map((product, index) => (
+          <ProductItem key={index} product={product} />
+        ))}
+      </CardsWrapper>
+    </Container>
   );
 }
 

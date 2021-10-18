@@ -4,16 +4,28 @@ import shoppingCartLogo from "../../assets/images/shopping-cart.png";
 import StoreLogo from "./StoreLogo";
 import ShoppingCart from "./ShoppingCart";
 import Search from "./Search";
-import "./Header.scss";
+import styled from "styled-components";
+
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
 
 function Header() {
   return (
     <header>
-      <div className="header container">
+      <Wrapper className="container">
         <StoreLogo logo={logoImage} width="auto" />
         <Search />
         <ShoppingCart logo={shoppingCartLogo} width={50} />
-      </div>
+      </Wrapper>
     </header>
   );
 }

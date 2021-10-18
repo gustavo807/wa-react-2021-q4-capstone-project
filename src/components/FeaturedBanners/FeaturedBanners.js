@@ -1,31 +1,58 @@
 import React from "react";
-import products from "../../mocks/en-us/featured-banners.json";
 import AliceCarousel from "react-alice-carousel";
 import styled from "styled-components";
-import "./FeaturedBanners.scss";
+import PropTypes from "prop-types";
 
 const Img = styled.img`
   width: 100%;
 `;
 
-function FeaturedBanners() {
-  const items = products.results.map((product, i) => (
-    <div className="item" data-value={i} key={product.id}>
-      <h4 style={{ textAlign: "center" }}>{product.data.title}</h4>
-      <Img
-        alt={product.data.main_image.alt}
-        src={product.data.main_image.url}
-      />
+const Container = styled.div`
+  margin-bottom: 100px;
+`;
+
+const Title = styled.h1`
+  text-align: center;
+`;
+
+const BannerTitle = styled.h4`
+  text-align: center;
+`;
+
+FeaturedBanners.propTypes = {
+  banners: PropTypes.array,
+};
+
+FeaturedBanners.defaultProps = {
+  banners: [],
+};
+
+function BannerItem({ banner, index }) {
+  const {
+    data: {
+      title,
+      main_image: { url, alt },
+    },
+  } = banner;
+
+  return (
+    <div className="item" data-value={index}>
+      <BannerTitle>{title}</BannerTitle>
+      <Img alt={alt} src={url} />
     </div>
+  );
+}
+
+function FeaturedBanners({ banners }) {
+  const items = banners.map((banner, index) => (
+    <BannerItem key={index} banner={banner} index={index} />
   ));
 
   return (
-    <div className="featured-banners">
-      <h1 className="title" style={{ textAlign: "center" }}>
-        Featured Banners
-      </h1>
+    <Container>
+      <Title>Featured Banners</Title>
       <AliceCarousel disableButtonsControls items={items} />
-    </div>
+    </Container>
   );
 }
 
