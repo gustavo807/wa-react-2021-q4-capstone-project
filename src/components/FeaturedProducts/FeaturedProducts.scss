@@ -1,0 +1,12 @@
+.featured-products {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.featured-products-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 220px);
+  place-content: center;
+  gap: 1rem;
+}
