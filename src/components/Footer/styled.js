@@ -1,7 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 
-const Container = styled.div`
+export const Container = styled.footer`
   width: 100%;
   height: 200px;
   line-height: 200px;
@@ -15,13 +14,3 @@ const Container = styled.div`
     padding-top: 25%;
   }
 `;
-
-function Footer() {
-  return (
-    <Container>
-      <p>Ecommerce created during Wizeline’s Academy React Bootcamp</p>
-    </Container>
-  );
-}
-
-export default Footer;
