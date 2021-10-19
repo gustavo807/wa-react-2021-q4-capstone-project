@@ -31,7 +31,22 @@ function Products({ title, products }) {
 }
 
 Products.propTypes = {
-  products: PropTypes.array,
+  products: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      data: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        price: PropTypes.number,
+        category: PropTypes.shape({
+          slug: PropTypes.string,
+        }),
+        mainimage: PropTypes.shape({
+          url: PropTypes.string.isRequired,
+          alt: PropTypes.string,
+        }),
+      }),
+    })
+  ),
   title: PropTypes.string,
 };
 

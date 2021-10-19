@@ -36,7 +36,19 @@ Banner.propTypes = {
 };
 
 Banner.defaultProps = {
-  items: [],
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      data: PropTypes.shape({
+        name: PropTypes.string,
+        title: PropTypes.string,
+        main_image: PropTypes.shape({
+          url: PropTypes.string.isRequired,
+          alt: PropTypes.string,
+        }),
+      }),
+    })
+  ),
   mainTitle: "Banner",
 };
 
