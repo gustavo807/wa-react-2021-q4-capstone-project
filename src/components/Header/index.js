@@ -2,12 +2,12 @@ import logoImg from "../../assets/images/store-logo.png";
 import shoppingCartImg from "../../assets/images/shopping-cart.png";
 import { Container } from "./styled";
 
-function Header({ onClick }) {
+function Header({ changeView }) {
   return (
     <header>
       <Container className="container">
         <img
-          onClick={() => onClick("Home")}
+          onClick={() => changeView("Home")}
           src={logoImg}
           alt="Store Logo"
           className="store-logo"

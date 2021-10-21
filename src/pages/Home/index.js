@@ -5,7 +5,7 @@ import featuredBanners from "../../mocks/en-us/featured-banners.json";
 import productCategories from "../../mocks/en-us/product-categories.json";
 import featuredProducts from "../../mocks/en-us/featured-products.json";
 
-function Home({ onClick }) {
+function Home({ changeView }) {
   return (
     <div className="container">
       <Banner mainTitle="Featured Banners" items={featuredBanners.results} />
@@ -13,7 +13,7 @@ function Home({ onClick }) {
       <Products
         title="Feature Products"
         products={featuredProducts.results}
-        onClick={onClick}
+        changeView={changeView}
       />
     </div>
   );

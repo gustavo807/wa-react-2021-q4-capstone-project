@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { Cards, Card, Price, Button } from "./styled";
 import { Container } from "../../styled";
 
-function Products({ title, products, onClick }) {
+function Products({ title, products, changeView }) {
   return (
     <Container>
       {title && <h1>{title}</h1>}
@@ -26,8 +26,8 @@ function Products({ title, products, onClick }) {
           )
         )}
       </Cards>
-      {onClick && (
-        <Button onClick={() => onClick("ProductList")}>
+      {changeView && (
+        <Button onClick={() => changeView("ProductList")}>
           View all products
         </Button>
       )}

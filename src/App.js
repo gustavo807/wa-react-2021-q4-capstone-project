@@ -7,13 +7,17 @@ import "react-alice-carousel/lib/scss/alice-carousel.scss";
 function App() {
   const [currentView, setCurrentView] = useState("Home");
 
+  function handleChangeView(page) {
+    setCurrentView(page);
+  }
+
   return (
     <Fragment>
       <GlobalStyle />
-      <Header onClick={(page) => setCurrentView(page)} />
+      <Header changeView={handleChangeView} />
 
       {currentView === "Home" ? (
-        <Home onClick={(page) => setCurrentView(page)} />
+        <Home changeView={handleChangeView} />
       ) : (
         <ProductList />
       )}
