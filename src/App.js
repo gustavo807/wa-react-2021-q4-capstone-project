@@ -1,15 +1,23 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import { Header, Footer } from "./components";
-import { Home } from "./pages";
+import { Home, ProductList } from "./pages";
 import GlobalStyle from "./globalStyles";
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
 
 function App() {
+  const [currentView, setCurrentView] = useState("Home");
+
   return (
     <Fragment>
       <GlobalStyle />
-      <Header />
-      <Home />
+      <Header onClick={(page) => setCurrentView(page)} />
+
+      {currentView === "Home" ? (
+        <Home onClick={(page) => setCurrentView(page)} />
+      ) : (
+        <ProductList />
+      )}
+
       <Footer />
     </Fragment>
   );

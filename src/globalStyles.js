@@ -31,6 +31,10 @@ body {
       }
     }
   }
+
+  .text-center{
+    text-align: center;
+  }
   
 `;
 

@@ -11,7 +11,7 @@ export const BannerContainer = styled(Container)`
   }
 
   .alice-carousel__dots-item:hover {
-    background-color: #807d7d;
+    background-color: #777777;
   }
   .alice-carousel__dots-item.__active {
     background-color: #222222;

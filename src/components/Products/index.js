@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
-import { Cards, Card, Price } from "./styled";
+import { Cards, Card, Price, Button } from "./styled";
 import { Container } from "../../styled";
 
-function Products({ title, products }) {
+function Products({ title, products, onClick }) {
   return (
     <Container>
-      <h1>{title}</h1>
+      {title && <h1>{title}</h1>}
       <Cards>
         {products.map(
           ({
@@ -26,6 +26,11 @@ function Products({ title, products }) {
           )
         )}
       </Cards>
+      {onClick && (
+        <Button onClick={() => onClick("ProductList")}>
+          View all products
+        </Button>
+      )}
     </Container>
   );
 }
@@ -48,11 +53,11 @@ Products.propTypes = {
     })
   ),
   title: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 Products.defaultProps = {
   products: [],
-  title: "Products",
 };
 
 export default Products;
