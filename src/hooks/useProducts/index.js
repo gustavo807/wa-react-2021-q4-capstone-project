@@ -6,12 +6,12 @@ function useProducts(filters = []) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const timeout = setTimeout(() => {
       setIsLoading(false);
     }, 2000);
 
     return () => {
-      clearTimeout(timer);
+      clearTimeout(timeout);
     };
   }, []);
 
