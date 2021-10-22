@@ -27,7 +27,10 @@ function Products({ title, products, changeView }) {
         )}
       </Cards>
       {changeView && (
-        <Button onClick={() => changeView("ProductList")}>
+        <Button
+          data-testid="view-all-products"
+          onClick={() => changeView("ProductList")}
+        >
           View all products
         </Button>
       )}
@@ -53,7 +56,7 @@ Products.propTypes = {
     })
   ),
   title: PropTypes.string,
-  onClick: PropTypes.func,
+  changeView: PropTypes.func,
 };
 
 Products.defaultProps = {

@@ -9,7 +9,7 @@ function ProductList() {
   const [filters, setFilters] = useState([]);
   const [products, isLoading] = useProducts(filters);
 
-  const handleClick = useCallback(
+  const handleFilter = useCallback(
     (categoryId) => {
       setFilters((prevFilters) =>
         prevFilters.includes(categoryId)
@@ -27,7 +27,12 @@ function ProductList() {
       <div className="wrapper-product-list">
         <div className={classNames({ sidebar: true, loading: isLoading })}>
           {categoriesData.results.map(({ id, data: { name } }) => (
-            <SidebarItem key={id} id={id} name={name} onClick={handleClick} />
+            <SidebarItem
+              key={id}
+              id={id}
+              name={name}
+              toggleFilter={handleFilter}
+            />
           ))}
         </div>
 

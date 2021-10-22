@@ -11,6 +11,7 @@ function Header({ changeView }) {
           src={logoImg}
           alt="Store Logo"
           className="store-logo"
+          data-testid="store-logo"
         />
         <input type="text" placeholder="Search" />
         <img
