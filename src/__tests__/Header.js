@@ -1,14 +1,12 @@
 import { Header } from "../components";
-import Enzyme, { shallow } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+import { render } from "@testing-library/react";
 import logoImage from "../assets/images/store-logo.png";
 
-Enzyme.configure({ adapter: new Adapter() });
-
 describe("<Header />", () => {
-  it("renders an image", () => {
-    const logo = shallow(<Header />);
+  it("should render the Store logo in the Header component", () => {
+    const { getByTestId } = render(<Header />);
+    const storeLogo = getByTestId("store-logo");
 
-    expect(logo.find(".store-logo").prop("src")).toEqual(logoImage);
+    expect(storeLogo).toHaveAttribute("src", logoImage);
   });
 });
