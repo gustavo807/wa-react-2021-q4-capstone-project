@@ -2,11 +2,17 @@ import logoImg from "../../assets/images/store-logo.png";
 import shoppingCartImg from "../../assets/images/shopping-cart.png";
 import { Container } from "./styled";
 
-function Header() {
+function Header({ changeView }) {
   return (
     <header>
       <Container className="container">
-        <img src={logoImg} alt="Store Logo" className="store-logo" />
+        <img
+          onClick={() => changeView("Home")}
+          src={logoImg}
+          alt="Store Logo"
+          className="store-logo"
+          data-testid="store-logo"
+        />
         <input type="text" placeholder="Search" />
         <img
           src={shoppingCartImg}
