@@ -1,46 +1,41 @@
 import styled from "styled-components";
 
 export const Spinner = styled.div`
-  & {
-    font-size: 10px;
-    margin: 50px auto;
-    text-indent: -9999em;
-    width: 11em;
-    height: 11em;
-    border-radius: 50%;
-    background: #777777;
-    background: -moz-linear-gradient(
-      left,
-      #777777 10%,
-      rgba(255, 255, 255, 0) 42%
-    );
-    background: -webkit-linear-gradient(
-      left,
-      #777777 10%,
-      rgba(255, 255, 255, 0) 42%
-    );
-    background: -o-linear-gradient(
-      left,
-      #777777 10%,
-      rgba(255, 255, 255, 0) 42%
-    );
-    background: -ms-linear-gradient(
-      left,
-      #777777 10%,
-      rgba(255, 255, 255, 0) 42%
-    );
-    background: linear-gradient(
-      to right,
-      #777777 10%,
-      rgba(255, 255, 255, 0) 42%
-    );
-    position: relative;
-    -webkit-animation: load3 1.4s infinite linear;
-    animation: load3 1.4s infinite linear;
-    -webkit-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
-  }
+  font-size: 10px;
+  margin: 50px auto;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: #777777;
+  background: -moz-linear-gradient(
+    left,
+    #777777 10%,
+    rgba(255, 255, 255, 0) 42%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #777777 10%,
+    rgba(255, 255, 255, 0) 42%
+  );
+  background: -o-linear-gradient(left, #777777 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(
+    left,
+    #777777 10%,
+    rgba(255, 255, 255, 0) 42%
+  );
+  background: linear-gradient(
+    to right,
+    #777777 10%,
+    rgba(255, 255, 255, 0) 42%
+  );
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+
   &:before {
     width: 50%;
     height: 50%;

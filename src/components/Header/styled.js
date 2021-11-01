@@ -10,25 +10,24 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
   }
+`;
 
-  img {
-    cursor: pointer;
-  }
+export const Img = styled.img`
+  cursor: pointer;
+`;
 
-  .shopping-cart {
-    width: 50px;
-  }
+export const ShoppingCart = styled.img`
+  width: 50px;
+`;
 
-  input {
-    width: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-
-    @media (max-width: 768px) {
-      width: 100%;
-    }
+export const SearchForm = styled.form`
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
   }
 `;
+
+

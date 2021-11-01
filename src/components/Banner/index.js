@@ -1,27 +1,31 @@
 import AliceCarousel from "react-alice-carousel";
 import PropTypes from "prop-types";
-import { BannerContainer } from "./styled";
+import { BannerContainer, Img } from "./styled";
+import { StyledLink } from "../../styled";
 
-function Banner({ mainTitle, items }) {
+function Banner({ mainTitle, items, hasLink, href, searchParam }) {
   return (
     <BannerContainer>
       <h1>{mainTitle}</h1>
       <AliceCarousel disableButtonsControls>
-        {items.map(
-          (
-            {
-              id,
-              data: {
-                title,
-                name,
-                main_image: { url, alt },
-              },
-            },
-            index
-          ) => (
+        {items.map(({ id, slugs, data: { title, name, main_image } }, index) =>
+          hasLink ? (
+            <StyledLink
+              key={id}
+              to={{
+                pathname: href,
+                search: slugs?.length > 0 ? `?${searchParam}=${slugs[0]}` : "",
+              }}
+            >
+              <div key={id} className="item" data-value={index}>
+                <h4>{title ?? name}</h4>
+                <Img alt={main_image.alt} src={main_image.url} />
+              </div>
+            </StyledLink>
+          ) : (
             <div key={id} className="item" data-value={index}>
               <h4>{title ?? name}</h4>
-              <img alt={alt} src={url} />
+              <Img alt={main_image.alt} src={main_image.url} />
             </div>
           )
         )}
@@ -31,11 +35,6 @@ function Banner({ mainTitle, items }) {
 }
 
 Banner.propTypes = {
-  items: PropTypes.array,
-  mainTitle: PropTypes.string,
-};
-
-Banner.defaultProps = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
@@ -49,7 +48,13 @@ Banner.defaultProps = {
       }),
     })
   ),
+};
+
+Banner.defaultProps = {
   mainTitle: "Banner",
+  hasLink: false,
+  href: "/#",
+  searchParam: "category",
 };
 
 export default Banner;

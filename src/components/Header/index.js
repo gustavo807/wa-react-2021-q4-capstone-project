@@ -1,20 +1,44 @@
+import { Link, useHistory } from "react-router-dom";
 import logoImg from "../../assets/images/store-logo.png";
 import shoppingCartImg from "../../assets/images/shopping-cart.png";
-import { Container } from "./styled";
+import { Search, Submit } from "../../styled";
+import { Container, Img, ShoppingCart, SearchForm } from "./styled";
+import { useState } from "react";
 
-function Header({ changeView }) {
+function Header() {
+  let history = useHistory();
+  const [value, setValue] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    history.push(`/search?q=${value}`);
+    setValue("");
+  };
+
   return (
     <header>
       <Container className="container">
-        <img
-          onClick={() => changeView("Home")}
-          src={logoImg}
-          alt="Store Logo"
-          className="store-logo"
-          data-testid="store-logo"
-        />
-        <input type="text" placeholder="Search" />
-        <img
+        <Link to="/">
+          <Img
+            src={logoImg}
+            alt="Store Logo"
+            className="store-logo"
+            data-testid="store-logo"
+          />
+        </Link>
+
+        <SearchForm onSubmit={handleSubmit}>
+          <Search
+            type="text"
+            placeholder="Search"
+            value={value}
+            required
+            onChange={(event) => setValue(event.target.value)}
+          />
+          <Submit type="submit" value="Submit" />
+        </SearchForm>
+
+        <ShoppingCart
           src={shoppingCartImg}
           alt="Shopping Cart"
           className="shopping-cart"
