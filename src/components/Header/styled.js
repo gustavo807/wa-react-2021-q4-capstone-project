@@ -16,7 +16,7 @@ export const Img = styled.img`
   cursor: pointer;
 `;
 
-export const ShoppingCart = styled.img`
+export const Icon = styled.img`
   width: 50px;
 `;
 

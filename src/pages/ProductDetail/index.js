@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { useParams } from "react-router";
 import { Loader, Gallery, ProductInfo } from "../../components";
-import { useRequests } from "../../hooks";
+import { usePrismic, useRequests } from "../../hooks";
 import {
   PageDetailWrapper,
   ProductInfoContainer,
@@ -10,17 +10,11 @@ import {
 
 function ProductDetail() {
   const { productId } = useParams();
+  const { at, createRequest } = usePrismic();
 
   const requests = useMemo(
-    () => [
-      {
-        name: "productData",
-        params: {
-          q: `[[:d+=+at(document.id,+"${productId}")+]]`,
-        },
-      },
-    ],
-    [productId]
+    () => [createRequest("productData", [at("document.id", productId)])],
+    [at, createRequest, productId]
   );
 
   const {
@@ -28,30 +22,27 @@ function ProductDetail() {
     isLoading,
   } = useRequests(requests);
 
-  if (isLoading) return <Loader />;
-
-  const {
-    tags,
-    data: { name, price, sku, category, description, specs, images },
-  } = productData.results[0];
+  const { tags, data } = productData?.results[0] ?? {};
 
   return (
     <div className="container">
-      {productData?.results_size === 0 ? (
+      {isLoading ? (
+        <Loader />
+      ) : productData?.results_size === 0 ? (
         <div>Not Product Found.</div>
       ) : (
         <PageDetailWrapper>
           <GalleryContainer>
-            <Gallery images={images} />
+            <Gallery images={data.images} />
           </GalleryContainer>
           <ProductInfoContainer>
             <ProductInfo
-              name={name}
-              price={price}
-              sku={sku}
-              category={category}
-              description={description}
-              specs={specs}
+              name={data.name}
+              price={data.price}
+              sku={data.sku}
+              category={data.category}
+              description={data.description}
+              specs={data.specs}
               tags={tags}
             />
           </ProductInfoContainer>

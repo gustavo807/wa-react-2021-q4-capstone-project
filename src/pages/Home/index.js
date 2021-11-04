@@ -1,36 +1,21 @@
 import React, { useMemo } from "react";
 import { Banner, Products, Loader } from "../../components";
-import { useRequests } from "../../hooks";
+import { useRequests, usePrismic } from "../../hooks";
 
 function Home() {
+  const { at, createRequest } = usePrismic();
+
   const requests = useMemo(
     () => [
-      {
-        name: "featuredBanners",
-        params: {
-          q: '[[at(document.type, "banner")]]',
-          pageSize: 5,
-        },
-      },
-      {
-        name: "productCategories",
-        params: {
-          q: '[[at(document.type, "category")]]',
-          pageSize: 30,
-        },
-      },
-      {
-        name: "featuredProducts",
-        params: {
-          q: [
-            '[[at(document.type, "product")]]',
-            '[[at(document.tags, ["Featured"])]]',
-          ],
-          pageSize: 16,
-        },
-      },
+      createRequest("featuredBanners", [at("document.type", "banner")], 5),
+      createRequest("productCategories", [at("document.type", "category")], 30),
+      createRequest(
+        "featuredProducts",
+        [at("document.type", "product"), at("document.tags", ["Featured"])],
+        16
+      ),
     ],
-    []
+    [at, createRequest]
   );
 
   const {
@@ -38,23 +23,30 @@ function Home() {
     isLoading,
   } = useRequests(requests);
 
-  if (isLoading) return <Loader />;
-
   return (
     <div className="container">
-      <Banner mainTitle="Featured Banners" items={featuredBanners.results} />
-      <Banner
-        mainTitle="Categories"
-        items={productCategories.results}
-        hasLink
-        href="/products"
-        searchParam="category"
-      />
-      <Products
-        title="Feature Products"
-        products={featuredProducts.results}
-        showAllProductsButton
-      />
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <>
+          <Banner
+            mainTitle="Featured Banners"
+            items={featuredBanners.results}
+          />
+          <Banner
+            mainTitle="Categories"
+            items={productCategories.results}
+            hasLink
+            href="/products"
+            searchParam="category"
+          />
+          <Products
+            title="Feature Products"
+            products={featuredProducts.results}
+            showAllProductsButton
+          />
+        </>
+      )}
     </div>
   );
 }

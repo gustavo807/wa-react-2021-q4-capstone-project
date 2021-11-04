@@ -1,40 +1,54 @@
 import AliceCarousel from "react-alice-carousel";
 import PropTypes from "prop-types";
-import { BannerContainer, Img } from "./styled";
+import BannerItem from "../BannerItem";
+import { BannerContainer } from "./styled";
 import { StyledLink } from "../../styled";
 
-function Banner({ mainTitle, items, hasLink, href, searchParam }) {
+function Banner(props) {
+  const { mainTitle, items, hasLink, href, searchParam } = props;
+
   return (
     <BannerContainer>
       <h1>{mainTitle}</h1>
       <AliceCarousel disableButtonsControls>
-        {items.map(({ id, slugs, data: { title, name, main_image } }, index) =>
-          hasLink ? (
+        {items.map(({ id, slugs, data }, index) => {
+          const { title, name, main_image } = data;
+          const slugParam =
+            slugs?.length > 0 ? `?${searchParam}=${slugs[0]}` : "";
+
+          return hasLink ? (
             <StyledLink
               key={id}
               to={{
                 pathname: href,
-                search: slugs?.length > 0 ? `?${searchParam}=${slugs[0]}` : "",
+                search: slugParam,
               }}
             >
-              <div key={id} className="item" data-value={index}>
-                <h4>{title ?? name}</h4>
-                <Img alt={main_image.alt} src={main_image.url} />
-              </div>
+              <BannerItem
+                key={id}
+                index={index}
+                title={title}
+                name={name}
+                main_image={main_image}
+              />
             </StyledLink>
           ) : (
-            <div key={id} className="item" data-value={index}>
-              <h4>{title ?? name}</h4>
-              <Img alt={main_image.alt} src={main_image.url} />
-            </div>
-          )
-        )}
+            <BannerItem
+              key={id}
+              index={index}
+              title={title}
+              name={name}
+              main_image={main_image}
+            />
+          );
+        })}
       </AliceCarousel>
     </BannerContainer>
   );
 }
 
 Banner.propTypes = {
+  mainTitle: PropTypes.string,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
@@ -48,6 +62,9 @@ Banner.propTypes = {
       }),
     })
   ),
+  hasLink: PropTypes.bool,
+  href: PropTypes.string,
+  searchParam: PropTypes.string,
 };
 
 Banner.defaultProps = {

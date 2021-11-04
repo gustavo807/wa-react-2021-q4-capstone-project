@@ -1,9 +1,9 @@
+import { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import logoImg from "../../assets/images/store-logo.png";
 import shoppingCartImg from "../../assets/images/shopping-cart.png";
 import { Search, Submit } from "../../styled";
-import { Container, Img, ShoppingCart, SearchForm } from "./styled";
-import { useState } from "react";
+import { Container, Img, Icon, SearchForm } from "./styled";
 
 function Header() {
   let history = useHistory();
@@ -38,7 +38,7 @@ function Header() {
           <Submit type="submit" value="Submit" />
         </SearchForm>
 
-        <ShoppingCart
+        <Icon
           src={shoppingCartImg}
           alt="Shopping Cart"
           className="shopping-cart"

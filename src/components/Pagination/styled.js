@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const List = styled.ul`
   display: inline-block;
 
   display: flex;
   justify-content: center;
+  list-style-type: none;
 `;
 
-export const Link = styled.div`
+export const Item = styled.li`
   color: black;
   float: left;
   padding: 8px 16px;

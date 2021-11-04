@@ -12,8 +12,15 @@ import "./styles.scss";
 
 SwiperCore.use([FreeMode, Navigation, Thumbs]);
 
-function Gallery({ images }) {
+function Gallery(props) {
+  const { images } = props;
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+  const imagesRender = images.map(({ image: { alt, url } }) => (
+    <SwiperSlide key={url}>
+      <img src={url} alt={alt} />
+    </SwiperSlide>
+  ));
 
   return (
     <div>
@@ -28,11 +35,7 @@ function Gallery({ images }) {
         thumbs={{ swiper: thumbsSwiper }}
         className="mySwiper2"
       >
-        {images.map(({ image: { alt, url } }) => (
-          <SwiperSlide key={url}>
-            <img src={url} alt={alt} />
-          </SwiperSlide>
-        ))}
+        {imagesRender}
       </Swiper>
       <Swiper
         onSwiper={setThumbsSwiper}
@@ -43,18 +46,21 @@ function Gallery({ images }) {
         watchSlidesProgress={true}
         className="mySwiper"
       >
-        {images.map(({ image: { alt, url } }) => (
-          <SwiperSlide key={url}>
-            <img src={url} alt={alt} />
-          </SwiperSlide>
-        ))}
+        {imagesRender}
       </Swiper>
     </div>
   );
 }
 
 Gallery.propTypes = {
-  images: PropTypes.array.isRequired,
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.shape({
+        alt: PropTypes.string,
+        url: PropTypes.string.isRequired,
+      }),
+    })
+  ),
 };
 
 export default Gallery;

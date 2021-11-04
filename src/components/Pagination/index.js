@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classnames from "classnames";
-import usePagination, { DOTS } from "../../hooks/usePagination";
-import { Wrapper, Link } from "./styled";
+import { usePagination } from "../../hooks";
+import { DOTS } from "../../hooks/usePagination";
+import { List, Item } from "./styled";
 
 const Pagination = (props) => {
   const {
@@ -34,22 +35,22 @@ const Pagination = (props) => {
 
   let lastPage = paginationRange[paginationRange.length - 1];
   return (
-    <Wrapper>
-      <Link
+    <List>
+      <Item
         className={classnames({
           disabled: currentPage === 1,
         })}
         onClick={onPrevious}
       >
         &laquo;
-      </Link>
+      </Item>
       {paginationRange.map((pageNumber) => {
         if (pageNumber === DOTS) {
-          return <Link className="dots">&#8230;</Link>;
+          return <Item className="dots">&#8230;</Item>;
         }
 
         return (
-          <Link
+          <Item
             key={pageNumber}
             className={classnames({
               active: pageNumber === currentPage,
@@ -57,19 +58,19 @@ const Pagination = (props) => {
             onClick={() => onPageChange(pageNumber)}
           >
             {pageNumber}
-          </Link>
+          </Item>
         );
       })}
 
-      <Link
+      <Item
         className={classnames({
           disabled: currentPage === lastPage,
         })}
         onClick={onNext}
       >
         &raquo;
-      </Link>
-    </Wrapper>
+      </Item>
+    </List>
   );
 };
 

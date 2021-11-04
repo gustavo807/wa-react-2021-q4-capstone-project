@@ -1,30 +1,26 @@
 import { useMemo, useState } from "react";
-import { useQuery, useRequests } from "../../hooks";
+import { usePrismic, useQuery, useRequests } from "../../hooks";
 import { Loader, Products } from "../../components";
 import { PaginationContainer, ButtonPagination } from "./styled";
 import classnames from "classnames";
 
 function SearchResults() {
-  let query = useQuery();
-  let searchTerm = query.get("q");
+  const { at, fulltext, createRequest } = usePrismic();
+  const query = useQuery();
+  const searchTerm = query.get("q");
 
   const [currPage, setCurrPage] = useState(1);
 
   const requests = useMemo(
     () => [
-      {
-        name: "searchResults",
-        params: {
-          q: [
-            `[[at(document.type, "product")]]`,
-            `[[fulltext(document, "${searchTerm}")]]`,
-          ],
-          pageSize: 20,
-          page: currPage,
-        },
-      },
+      createRequest(
+        "searchResults",
+        [at("document.type", "product"), fulltext("document", searchTerm)],
+        20,
+        currPage
+      ),
     ],
-    [searchTerm, currPage]
+    [at, fulltext, createRequest, searchTerm, currPage]
   );
 
   const {
@@ -39,7 +35,7 @@ function SearchResults() {
       ) : (
         <>
           <h2 className="text-center">Results for Search Term: {searchTerm}</h2>
-          {searchResults.results_size === 0 ? (
+          {searchResults?.results_size === 0 ? (
             <div>Not Records Found.</div>
           ) : (
             <>

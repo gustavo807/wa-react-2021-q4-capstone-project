@@ -1,6 +1,6 @@
 import { useState, useCallback, useMemo, useEffect } from "react";
 import { Products, Loader, SidebarItem, Pagination } from "../../components";
-import { useQuery, useRequests } from "../../hooks";
+import { usePrismic, useQuery, useRequests } from "../../hooks";
 import classNames from "classnames";
 import { Button } from "../../styled";
 import {
@@ -14,27 +14,16 @@ import {
 let PageSize = 12;
 
 function ProductList() {
+  const { at, createRequest } = usePrismic();
   let query = useQuery();
   let categorySlug = query.get("category");
 
   const requests = useMemo(
     () => [
-      {
-        name: "productCategories",
-        params: {
-          q: '[[at(document.type, "category")]]',
-          pageSize: 30,
-        },
-      },
-      {
-        name: "productsList",
-        params: {
-          q: '[[at(document.type, "product")]]',
-          pageSize: 100,
-        },
-      },
+      createRequest("productCategories", [at("document.type", "category")], 30),
+      createRequest("productsList", [at("document.type", "product")], 100),
     ],
-    []
+    [at, createRequest]
   );
 
   const {
@@ -54,39 +43,37 @@ function ProductList() {
   }, [currentPage, products]);
 
   useEffect(() => {
-    if (isLoading || !categorySlug) {
-      return () => {};
-    }
+    if (!isLoading && categorySlug) {
+      for (const category of productCategories.results) {
+        if (!category.slugs.includes(categorySlug)) {
+          continue;
+        }
 
-    for (const category of productCategories.results) {
-      if (!category.slugs.includes(categorySlug)) {
-        continue;
+        const addCategoryIdToActiveFilters = (prevState) => [
+          ...prevState,
+          category.id,
+        ];
+        setActiveFilters(addCategoryIdToActiveFilters);
+        break;
       }
-
-      const addCategoryIdToActiveFilters = (prevState) => [
-        ...prevState,
-        category.id,
-      ];
-      setActiveFilters(addCategoryIdToActiveFilters);
-      break;
     }
   }, [isLoading, categorySlug, productCategories]);
 
   useEffect(() => {
-    if (isLoading) {
-      return () => {};
+    if (!isLoading) {
+      const filteredProductsList = productsList.results.filter(
+        (productItem) => {
+          if (activeFilters.length === 0) {
+            return true;
+          }
+
+          const { id } = productItem.data.category;
+          return activeFilters.includes(id);
+        }
+      );
+
+      setProducts(filteredProductsList);
     }
-
-    const filteredProductsList = productsList.results.filter((productItem) => {
-      if (activeFilters.length === 0) {
-        return true;
-      }
-
-      const { id } = productItem.data.category;
-      return activeFilters.includes(id);
-    });
-
-    setProducts(filteredProductsList);
   }, [isLoading, productsList, activeFilters]);
 
   const handleToggleActive = useCallback(

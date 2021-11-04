@@ -13,7 +13,3 @@ export const BannerContainer = styled(Container)`
     background-color: #222222;
   }
 `;
-
-export const Img = styled.img`
-  width: 100%;
-`;

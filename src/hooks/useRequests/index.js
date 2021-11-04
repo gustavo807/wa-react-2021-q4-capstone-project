@@ -1,7 +1,6 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import { API_BASE_URL } from "../../constants";
 import useLatestAPI from "../useLatestAPI";
-import { LangContext } from "../../context";
 
 const initial_state = {
   data: {},
@@ -11,7 +10,6 @@ const initial_state = {
 function useRequests(requests = []) {
   const { ref: apiRef, isLoading: isApiMetadataLoading } = useLatestAPI();
   const [sections, setSections] = useState(() => initial_state);
-  const { lang } = useContext(LangContext);
 
   useEffect(() => {
     if (!apiRef || isApiMetadataLoading) {
@@ -22,28 +20,18 @@ function useRequests(requests = []) {
     const controllerList = [];
 
     async function getRequests() {
-      const promises = requests.map(({ name, params }) => {
+      const promises = requests.map((promise) => {
         let controller = new AbortController();
         controllerList.push(controller);
 
-        var searchParams = Object.entries(params)
-          .map(([key, value]) => {
-            if (Array.isArray(value)) {
-              return value.map((v) => `&${key}=${escape(v)}`).join("");
-            }
-
-            return `&${key}=${escape(value)}`;
-          })
-          .join("");
-
         return fetch(
-          `${API_BASE_URL}/documents/search?ref=${apiRef}${searchParams}&lang=${lang}`,
+          `${API_BASE_URL}/documents/search?ref=${apiRef}${promise.params}`,
           {
             signal: controller.signal,
           }
         )
           .then((res) => res.json())
-          .then((data) => ({ [name]: data }));
+          .then((data) => ({ [promise.name]: data }));
       });
 
       try {
@@ -73,7 +61,7 @@ function useRequests(requests = []) {
         control.abort();
       });
     };
-  }, [apiRef, isApiMetadataLoading, requests, lang]);
+  }, [apiRef, isApiMetadataLoading, requests]);
 
   return sections;
 }
