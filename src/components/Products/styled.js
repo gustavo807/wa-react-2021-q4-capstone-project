@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Button } from "../../styled";
 
 export const Cards = styled.div`
   width: 100%;
@@ -16,9 +17,13 @@ export const Card = styled.div`
   font-family: arial;
   height: 100%;
 
-  img {
-    width: 100%;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+export const Img = styled.img`
+  width: 100%;
 `;
 
 export const Price = styled.div`
@@ -26,15 +31,8 @@ export const Price = styled.div`
   font-size: 16px;
 `;
 
-export const Button = styled.button`
-  background-color: #222222;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 30px;
+export const AddToCart = styled(Button)`
+  width: 100%;
+  margin-top: 0;
 `;
+

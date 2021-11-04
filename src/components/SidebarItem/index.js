@@ -1,21 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import { Item } from "./styled";
 
-function SidebarItem({ id, name, toggleFilter }) {
-  const [active, setActive] = useState(false);
-
-  function handleToggle() {
-    setActive(!active);
-    toggleFilter(id);
-  }
-
+function SidebarItem({ id, name, toggleActive, active }) {
   return (
     <Item
-      disabled={true}
       className={classNames({ active: active })}
-      onClick={handleToggle}
+      onClick={() => toggleActive(id)}
     >
       {name}
     </Item>
@@ -25,7 +17,8 @@ function SidebarItem({ id, name, toggleFilter }) {
 SidebarItem.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  toggleFilter: PropTypes.func.isRequired,
+  toggleActive: PropTypes.func.isRequired,
+  active: PropTypes.bool.isRequired,
 };
 
 export default React.memo(SidebarItem);

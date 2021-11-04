@@ -2,10 +2,6 @@ import styled from "styled-components";
 import { Container } from "../../styled";
 
 export const BannerContainer = styled(Container)`
-  img {
-    width: 100%;
-  }
-
   .alice-carousel__dots-item {
     background-color: #b4adad;
   }
