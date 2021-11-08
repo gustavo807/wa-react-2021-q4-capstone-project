@@ -32,14 +32,14 @@ export const Category = styled.span`
   align-self: flex-start;
 `;
 
-export const Tags = styled.span`
+export const Stock = styled.span`
   font-size: 20px;
   align-self: flex-start;
 `;
 
-export const Form = styled.form`
-  padding: 15px;
-  display: flex;
+export const Tags = styled.span`
+  font-size: 20px;
+  align-self: flex-start;
 `;
 
 export const Description = styled.span`

@@ -1,5 +1,8 @@
+import { useState } from "react";
 import PropTypes from "prop-types";
-import { Search, Submit } from "../../styled";
+import { useCart } from "../../hooks";
+import { formatter } from "../../utils";
+import { Flex, Button } from "../../styled";
 import {
   Container,
   Title,
@@ -7,42 +10,79 @@ import {
   Sku,
   Category,
   Tags,
-  Form,
   Description,
+  Stock,
 } from "./styled";
+import Quantity from "../Quantity";
 
-function ProductInfo({ name, price, sku, category, description, specs, tags }) {
-  const handleSubmit = (event) => {
-    event.preventDefault();
+function ProductInfo(props) {
+  const [quantity, setQuantity] = useState(1);
+  const { dispatch, add, products } = useCart();
+  const { format } = formatter;
+  const { product = {} } = props;
+
+  const currQty = products.find((p) => p.id === product.id)?.quantity || 0;
+  const isDisabled = currQty === product.data.stock;
+
+  const isDownDisabled = quantity === 1;
+  const isUpDisabled = quantity + currQty > props.stock - 1;
+
+  const handleAddToCart = () => {
+    dispatch(add({ product: product, quantity: quantity }));
+    setQuantity(1);
+  };
+
+  const handleIncrement = () => {
+    setQuantity((prevQty) => prevQty + 1);
+  };
+
+  const handleDecrement = () => {
+    setQuantity((prevQty) => prevQty - 1);
   };
 
   return (
     <Container>
-      <Title>{name}</Title>
-      <Price>Price: ${price}</Price>
-      <Sku>SKU: {sku}</Sku>
-      <Category>Category: {category.slug}</Category>
+      <Title>{props.name}</Title>
+      <Price>Price: {format(props.price)}</Price>
+      <Sku>SKU: {props.sku}</Sku>
+      <Stock>Stock: {props.stock}</Stock>
+      <Category>Category: {props.category.slug}</Category>
       <Tags>
         <span>Tags:</span>
         <ul>
-          {tags.map((tag) => (
+          {props.tags.map((tag) => (
             <li key={tag}>{tag}</li>
           ))}
         </ul>
       </Tags>
 
       <Description>
-        {description.length > 0 ? description[0].text : ""}
+        {props.description.length > 0 ? props.description[0].text : ""}
       </Description>
 
-      <Form onSubmit={handleSubmit}>
-        <Search
-          type="number"
-          placeholder="Enter quantity"
-          aria-label="Product Quantity"
-        />
-        <Submit type="submit" value="Add to Cart" />
-      </Form>
+      {props.stock === 0 ? (
+        <h2>Product out of stock</h2>
+      ) : (
+        <Flex
+          container
+          flexDirection="column"
+          alignItems="center"
+          margin="15px 0"
+          gap="10px"
+        >
+          <Quantity
+            quantity={isDisabled ? 0 : quantity}
+            handleIncrement={handleIncrement}
+            handleDecrement={handleDecrement}
+            isDownDisabled={isDownDisabled}
+            isUpDisabled={isUpDisabled}
+          />
+          <Button onClick={handleAddToCart} disabled={isDisabled}>
+            {isDisabled ? "Out of stock" : "Add to Cart"}
+          </Button>
+        </Flex>
+      )}
+
       <table>
         <thead>
           <tr>
@@ -50,7 +90,7 @@ function ProductInfo({ name, price, sku, category, description, specs, tags }) {
           </tr>
         </thead>
         <tbody>
-          {specs.map((spec) => (
+          {props.specs.map((spec) => (
             <tr key={spec.spec_name}>
               <th>{spec.spec_name}</th>
               <td>{spec.spec_value}</td>
@@ -63,6 +103,7 @@ function ProductInfo({ name, price, sku, category, description, specs, tags }) {
 }
 
 ProductInfo.propTypes = {
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   sku: PropTypes.string.isRequired,
@@ -81,6 +122,7 @@ ProductInfo.propTypes = {
       spec_value: PropTypes.string.isRequired,
     })
   ),
+  stock: PropTypes.number.isRequired,
 };
 
 export default ProductInfo;
