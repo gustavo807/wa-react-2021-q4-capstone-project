@@ -6,6 +6,8 @@ import {
   ProductDetail,
   SearchResults,
   NotFound,
+  Cart,
+  Checkout,
 } from "./pages";
 import GlobalStyle from "./globalStyles";
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
@@ -29,6 +31,13 @@ function App() {
         </Route>
         <Route path="/search">
           <SearchResults />
+        </Route>
+
+        <Route path="/cart">
+          <Cart />
+        </Route>
+        <Route path="/checkout">
+          <Checkout />
         </Route>
 
         <Route path="*">
