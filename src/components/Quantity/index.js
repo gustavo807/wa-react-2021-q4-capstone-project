@@ -31,12 +31,4 @@ Quantity.propTypes = {
   isDownDisabled: PropTypes.bool.isRequired,
 };
 
-Quantity.defaultProps = {
-  quantity: 0,
-  handleDecrement: () => {},
-  handleIncrement: () => {},
-  isUpDisabled: true,
-  isDownDisabled: true,
-};
-
 export default Quantity;
