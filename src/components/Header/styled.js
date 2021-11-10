@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -9,6 +10,7 @@ export const Container = styled.div`
   @media (max-width: 1000px) {
     flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
 `;
 
@@ -17,7 +19,7 @@ export const Img = styled.img`
 `;
 
 export const Icon = styled.img`
-  width: 50px;
+  width: 40px;
 `;
 
 export const SearchForm = styled.form`
@@ -27,7 +29,17 @@ export const SearchForm = styled.form`
   @media (max-width: 1000px) {
     flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
 `;
 
+export const StyledLink = styled(Link)`
+  display: flex;
+  align-items: center;
 
+  color: #222222;
+  text-decoration: none;
+
+  font-size: 18px;
+  font-weight: 400;
+`;

@@ -7,3 +7,6 @@ export { default as SidebarItem } from "./SidebarItem";
 export { default as Pagination } from "./Pagination";
 export { default as Gallery } from "./Gallery";
 export { default as ProductInfo } from "./ProductInfo";
+export { default as ProductRow } from "./ProductRow";
+export { default as Quantity } from "./Quantity";
+export { default as AddToCart } from "./AddToCart";

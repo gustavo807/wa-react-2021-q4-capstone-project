@@ -1,31 +1,26 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import { Cards, Card, Price, Img, AddToCart } from "./styled";
-import { Button } from "../../styled";
-import { Container, StyledLink } from "../../styled";
+import { Cards } from "./styled";
+import { Container, Button, Flex } from "../../styled";
+import ProductItem from "../ProductItem";
 
 function Products({ title, products, showAllProductsButton }) {
   return (
     <Container>
       {title && <h1>{title}</h1>}
       <Cards>
-        {products.map(({ id, data: { name, price, category, mainimage } }) => (
-          <Card key={id}>
-            <StyledLink to={`/product/${id}`}>
-              <Img src={mainimage.url} alt={mainimage.alt} />
-              <h4>{name}</h4>
-              <Price>${price}</Price>
-              <p>{category.slug}</p>
-            </StyledLink>
-
-            <AddToCart>Add to cart</AddToCart>
-          </Card>
+        {products.map((product) => (
+          <ProductItem key={product.id} product={product} />
         ))}
       </Cards>
       {showAllProductsButton && (
-        <Link to="/products">
-          <Button data-testid="view-all-products">View all products</Button>
-        </Link>
+        <Flex container justifyContent="center" margin="30px">
+          <Link to="/products">
+            <Button className="lg" data-testid="view-all-products">
+              View all products
+            </Button>
+          </Link>
+        </Flex>
       )}
     </Container>
   );

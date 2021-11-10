@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { useParams } from "react-router";
 import { Loader, Gallery, ProductInfo } from "../../components";
+import ErrorBoundary from "../../error";
 import { usePrismic, useRequests } from "../../hooks";
 import {
   PageDetailWrapper,
@@ -22,7 +23,9 @@ function ProductDetail() {
     isLoading,
   } = useRequests(requests);
 
-  const { tags, data } = productData?.results[0] ?? {};
+  const product = productData?.results[0];
+
+  const { tags, data } = product || {};
 
   return (
     <div className="container">
@@ -36,15 +39,20 @@ function ProductDetail() {
             <Gallery images={data.images} />
           </GalleryContainer>
           <ProductInfoContainer>
-            <ProductInfo
-              name={data.name}
-              price={data.price}
-              sku={data.sku}
-              category={data.category}
-              description={data.description}
-              specs={data.specs}
-              tags={tags}
-            />
+            <ErrorBoundary>
+              <ProductInfo
+                id={product.id}
+                name={data.name}
+                price={data.price}
+                sku={data.sku}
+                category={data.category}
+                description={data.description}
+                specs={data.specs}
+                tags={tags}
+                stock={data.stock}
+                product={product}
+              />
+            </ErrorBoundary>
           </ProductInfoContainer>
         </PageDetailWrapper>
       )}

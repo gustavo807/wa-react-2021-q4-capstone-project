@@ -1,18 +1,20 @@
-import { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import logoImg from "../../assets/images/store-logo.png";
 import shoppingCartImg from "../../assets/images/shopping-cart.png";
-import { Search, Submit } from "../../styled";
-import { Container, Img, Icon, SearchForm } from "./styled";
+import { Input, Submit } from "../../styled";
+import { Container, Img, Icon, SearchForm, StyledLink } from "./styled";
+import { useInput, useCart } from "../../hooks";
 
 function Header() {
   let history = useHistory();
-  const [value, setValue] = useState("");
+  const { value, resetValue, bind } = useInput("");
+
+  const { count } = useCart();
 
   const handleSubmit = (event) => {
     event.preventDefault();
     history.push(`/search?q=${value}`);
-    setValue("");
+    resetValue();
   };
 
   return (
@@ -28,21 +30,25 @@ function Header() {
         </Link>
 
         <SearchForm onSubmit={handleSubmit}>
-          <Search
+          <Input
+            width="50%"
+            mobileWidth="100%"
             type="text"
             placeholder="Search"
-            value={value}
+            {...bind}
             required
-            onChange={(event) => setValue(event.target.value)}
           />
           <Submit type="submit" value="Submit" />
         </SearchForm>
 
-        <Icon
-          src={shoppingCartImg}
-          alt="Shopping Cart"
-          className="shopping-cart"
-        />
+        <StyledLink to="/cart">
+          <Icon
+            src={shoppingCartImg}
+            alt="Shopping Cart"
+            className="shopping-cart"
+          />
+          {count > 0 && ` (${count}) `}
+        </StyledLink>
       </Container>
     </header>
   );
