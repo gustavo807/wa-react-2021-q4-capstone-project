@@ -7,14 +7,14 @@ import { useInput, useCart } from "../../hooks";
 
 function Header() {
   let history = useHistory();
-  const { value, reset, bind } = useInput("");
+  const { value, resetValue, bind } = useInput("");
 
   const { count } = useCart();
 
   const handleSubmit = (event) => {
     event.preventDefault();
     history.push(`/search?q=${value}`);
-    reset();
+    resetValue();
   };
 
   return (
