@@ -5,11 +5,11 @@ import { Button, Flex, StyledLink, FullWidthTable } from "../../styled";
 import { formatter } from "../../utils";
 
 function Cart() {
-  const { products, total, dispatch, reset } = useCart();
+  const { products, total, dispatch, clear } = useCart();
   const { format } = formatter;
 
   const handleClearCart = () => {
-    dispatch(reset());
+    dispatch(clear());
   };
 
   return (

@@ -80,7 +80,7 @@ export const slice = createSlice({
         throw new Error("Product not found.");
       }
     },
-    reset: (state) => {
+    clear: (state) => {
       state.products = [];
       state.count = 0;
       state.total = 0;
@@ -114,7 +114,7 @@ export const decrement =
     dispatch(update({ id, type: "decrement" }));
   };
 
-export const { add, update, remove, reset } = slice.actions;
+export const { add, update, remove, clear } = slice.actions;
 
 export const selectProducts = (state) => state.cart.products;
 export const selectCount = (state) => state.cart.count;

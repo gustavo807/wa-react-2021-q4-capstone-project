@@ -1,11 +1,10 @@
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import {
   add,
   increment,
   decrement,
   remove,
-  reset,
+  clear,
 } from "../../redux/slices/cartSlice";
 import {
   selectProducts,
@@ -28,7 +27,7 @@ function useCart() {
     increment,
     decrement,
     remove,
-    reset,
+    clear,
   };
 }
 
