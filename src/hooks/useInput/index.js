@@ -6,7 +6,7 @@ function useInput(initialValue) {
   return {
     value,
     setValue,
-    resetValue: () => setValue(""),
+    resetValue: () => setValue(initialValue),
     bind: {
       value,
       onChange: (event) => {
