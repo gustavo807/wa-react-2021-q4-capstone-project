@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import { useCart } from "../../hooks";
-import { formatter } from "../../utils";
+import { formatter, productQty } from "../../utils";
 import { Flex } from "../../styled";
 import {
   Container,
@@ -22,8 +22,7 @@ function ProductInfo(props) {
   const { format } = formatter;
   const { product = {} } = props;
 
-  const currQty = products.find((p) => p.id === product.id)?.quantity || 0;
-  const isDisabled = currQty === product.data.stock;
+  const { currQty, isDisabled } = productQty(products, product);
 
   const isDownDisabled = quantity === 1;
   const isUpDisabled = quantity + currQty > props.stock - 1;

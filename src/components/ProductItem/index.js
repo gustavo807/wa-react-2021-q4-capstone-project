@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useCart } from "../../hooks";
 import { Card, Img, Price } from "./styled";
 import { StyledLink } from "../../styled";
-import { formatter } from "../../utils";
+import { formatter, productQty } from "../../utils";
 import AddToCart from "../AddToCart";
 
 function ProductItem(props) {
@@ -10,8 +10,7 @@ function ProductItem(props) {
   const { format } = formatter;
   const { dispatch, add, products } = useCart();
 
-  const currQty = products.find((p) => p.id === id)?.quantity || 0;
-  const isDisabled = currQty === data.stock;
+  const { isDisabled } = productQty(products, props.product);
 
   const handleClick = () => {
     if (!isDisabled) {
