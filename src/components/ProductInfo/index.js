@@ -2,7 +2,7 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import { useCart } from "../../hooks";
 import { formatter } from "../../utils";
-import { Flex, Button } from "../../styled";
+import { Flex } from "../../styled";
 import {
   Container,
   Title,
@@ -14,6 +14,7 @@ import {
   Stock,
 } from "./styled";
 import Quantity from "../Quantity";
+import AddToCart from "../AddToCart";
 
 function ProductInfo(props) {
   const [quantity, setQuantity] = useState(1);
@@ -77,9 +78,10 @@ function ProductInfo(props) {
             isDownDisabled={isDownDisabled}
             isUpDisabled={isUpDisabled}
           />
-          <Button onClick={handleAddToCart} disabled={isDisabled}>
-            {isDisabled ? "Out of stock" : "Add to Cart"}
-          </Button>
+          <AddToCart
+            isDisabled={isDisabled}
+            handleAddToCart={handleAddToCart}
+          />
         </Flex>
       )}
 

@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
 import { useCart } from "../../hooks";
 import { Card, Img, Price } from "./styled";
-import { Button, StyledLink } from "../../styled";
+import { StyledLink } from "../../styled";
 import { formatter } from "../../utils";
+import AddToCart from "../AddToCart";
 
 function ProductItem(props) {
   const { id, data } = props.product;
@@ -27,9 +28,7 @@ function ProductItem(props) {
         <p>{data.category.slug}</p>
       </StyledLink>
 
-      <Button onClick={handleClick} disabled={isDisabled}>
-        {isDisabled ? "Out of stock" : "Add to cart"}
-      </Button>
+      <AddToCart isDisabled={isDisabled} handleAddToCart={handleClick} />
     </Card>
   );
 }
