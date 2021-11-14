@@ -47,7 +47,7 @@ function Header() {
             alt="Shopping Cart"
             className="shopping-cart"
           />
-          {count > 0 && ` (${count}) `}
+          <span data-testid="total-count">{count > 0 && `(${count})`}</span>
         </StyledLink>
       </Container>
     </header>

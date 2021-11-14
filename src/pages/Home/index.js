@@ -41,7 +41,7 @@ function Home() {
             searchParam="category"
           />
           <Products
-            title="Feature Products"
+            title="Featured Products"
             products={featuredProducts.results}
             showAllProductsButton
           />
