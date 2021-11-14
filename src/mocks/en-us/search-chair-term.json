@@ -1,0 +1,406 @@
+{
+  "page": 1,
+  "results_per_page": 20,
+  "results_size": 4,
+  "total_results_size": 4,
+  "total_pages": 1,
+  "next_page": null,
+  "prev_page": null,
+  "results": [
+    {
+      "id": "YWJDNRIAAC0Ay6dJ",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJDNRIAAC0Ay6dJ%22%29+%5D%5D",
+      "tags": ["Living Room", "Armchair"],
+      "first_publication_date": "2021-10-10T01:34:50+0000",
+      "last_publication_date": "2021-10-10T02:29:47+0000",
+      "slugs": ["studded-armchair-irving", "sillon-con-tachuelas-irving"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        { "id": "YWJClRIAACsAy6SA", "type": "product", "lang": "es-mx" }
+      ],
+      "data": {
+        "name": "Studded Armchair Irving",
+        "sku": "1083862733",
+        "category": {
+          "id": "YWHviRIAACsAyjP3",
+          "type": "category",
+          "tags": [],
+          "slug": "furniture",
+          "lang": "en-us",
+          "first_publication_date": "2021-10-09T23:34:39+0000",
+          "last_publication_date": "2021-10-12T23:30:58+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": { "width": 940, "height": 1215 },
+          "alt": "Studded Armchair Irving ",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/9b1b6200-11d6-4172-8272-f66d58aaad8d_1.webp?auto=compress,format"
+        },
+        "short_description": "Our compact version of the classic club chair offers all the comforts of the original, but in a small swivel silhouette that is suitable for a library, study or small room.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Our compact version of the classic club chair offers all the comforts of the original, but in a small swivel silhouette that is suitable for a library, study or small room. The cushions are wrapped in flame retardant free polyester, which gives it a firmer feel. Steel anti-sag springs provide cushioned support. Features attractive nail head accents. The swivel mechanism allows the chair to rotate 360 degrees; does not tilt or turn. Premium quality leather, dyed with aniline. The skin will soften and clear with use and the passage of time, developing an elegant patina. Leather is a natural product. Each skin has inherent variations in color and texture. No two pieces are alike.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Dimensions",
+            "spec_value": "81 cm wide x 90 cm deep; 82.50 cm high. \""
+          },
+          {
+            "spec_name": "Care and Cleaning Instructions",
+            "spec_value": "Although leather is one of the most durable upholstery materials"
+          },
+          { "spec_name": "Material", "spec_value": "Leather" }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": { "width": 940, "height": 1215 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/9b1b6200-11d6-4172-8272-f66d58aaad8d_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": { "width": 940, "height": 1215 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/46fc41b2-1552-4718-9ebb-9101cadf7202_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": { "width": 940, "height": 1215 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/07313f4b-1b48-4ec3-9290-1f046015bc41_3.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": { "width": 940, "height": 1215 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/3e43009d-b5fd-4dfc-aeb8-5134a842eea1_4.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": { "width": 940, "height": 1215 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/daff07dd-a969-4d08-b406-f0498b7121a0_5.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": { "width": 940, "height": 1215 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/6cdda5a0-5c3d-4cb9-8e47-f4eaeb49edc7_6.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": { "width": 940, "height": 1215 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/ed4fdf26-f8bd-47a9-9406-ca67e8ad2412_7.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 3,
+        "price": 1593.18
+      }
+    },
+    {
+      "id": "YWJFhhIAACgAy7GY",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJFhhIAACgAy7GY%22%29+%5D%5D",
+      "tags": ["Living Room", "Armchair"],
+      "first_publication_date": "2021-10-10T01:44:43+0000",
+      "last_publication_date": "2021-10-10T02:30:25+0000",
+      "slugs": ["balboa-armchair", "sillon-balboa"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        { "id": "YWJFAxIAACkAy69T", "type": "product", "lang": "es-mx" }
+      ],
+      "data": {
+        "name": "Balboa Armchair",
+        "sku": "1106346701",
+        "category": {
+          "id": "YWHviRIAACsAyjP3",
+          "type": "category",
+          "tags": [],
+          "slug": "furniture",
+          "lang": "en-us",
+          "first_publication_date": "2021-10-09T23:34:39+0000",
+          "last_publication_date": "2021-10-12T23:30:58+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": { "width": 696, "height": 900 },
+          "alt": "Balboa Armchair",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/22cea604-bb41-4b20-ab03-6d3482bddbd7_1.webp?auto=compress,format"
+        },
+        "short_description": "The swivel mechanism allows the chair to rotate 360 degrees; does not tilt or turn. Fixed cushions. The frame is made of engineered wood and filled with 100% polyester fibers.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "The swivel mechanism allows the chair to rotate 360 degrees; does not tilt or turn. Fixed cushions. The frame is made of engineered wood and filled with 100% polyester fibers. Crown construction provides increased strength for increased durability. No sinuous sunken springs to provide cushion support. Created in the USA by our master craftsmen. Polyester wrapped cushions for a firmer feel. 2 back cushions included for added comfort.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          { "spec_name": "Leg shape", "spec_value": "Circular" },
+          { "spec_name": "Seat Type", "spec_value": "Fixed seats" },
+          { "spec_name": "Color", "spec_value": "Beige" },
+          { "spec_name": "Product width", "spec_value": "101.60 cm" },
+          {
+            "spec_name": "Care and cleaning instructions",
+            "spec_value": "Rotate the cushions and vacuum under them regularly. To avoid discoloration"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": { "width": 696, "height": 900 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/22cea604-bb41-4b20-ab03-6d3482bddbd7_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": { "width": 696, "height": 900 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/1e8e4b98-c6a3-4af3-9048-c8a857415080_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": { "width": 696, "height": 900 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/c06cd39e-da80-4a37-8487-82d8990599b9_3.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": { "width": 696, "height": 900 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/bac94b84-0298-4a17-b235-1468563fda95_4.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": { "width": 696, "height": 900 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/211a9a2d-db21-4783-be66-791cd30a77ab_5.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": { "width": 696, "height": 900 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/de5f3e3f-ccf6-45f9-bee0-ab10df9f0e09_6.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": { "width": 696, "height": 900 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/5fc4aa04-cb4d-4d54-8c99-39d302cff829_7.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": { "width": 696, "height": 900 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/008703c1-fde6-412d-984c-59eb2f69adc8_8.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 8,
+        "price": 1931.13
+      }
+    },
+    {
+      "id": "YWJG9xIAAC8Ay7f6",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJG9xIAAC8Ay7f6%22%29+%5D%5D",
+      "tags": ["Living Room", "Armchair"],
+      "first_publication_date": "2021-10-10T01:50:52+0000",
+      "last_publication_date": "2021-10-10T02:31:10+0000",
+      "slugs": ["roscoe-armchair-gray", "sillon-roscoe-gris"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        { "id": "YWJGghIAAC4Ay7Xz", "type": "product", "lang": "es-mx" }
+      ],
+      "data": {
+        "name": "Roscoe Armchair Gray",
+        "sku": "1086706985",
+        "category": {
+          "id": "YWHviRIAACsAyjP3",
+          "type": "category",
+          "tags": [],
+          "slug": "furniture",
+          "lang": "en-us",
+          "first_publication_date": "2021-10-09T23:34:39+0000",
+          "last_publication_date": "2021-10-12T23:30:58+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": { "width": 696, "height": 900 },
+          "alt": "Roscoe Armchair Gray",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/5776d3aa-05fe-472e-8971-f7c4ecba17f1_1.webp?auto=compress,format"
+        },
+        "short_description": "A contemporary profile with great style and an excellent value. The Roscoe Chair is thickly upholstered in a Basketweave Ash fabric and accented with nail trim along the square back, subtly rolled arms and base.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "A contemporary profile with great style and an excellent value. The Roscoe Chair is thickly upholstered in a Basketweave Ash fabric and accented with nail trim along the square back, subtly rolled arms and base. Down blend wrapped cushion adds seating comfort. Lightweight swivel arm. Loose seat cushion. Polyester wrapped cushions for a firmer feel. Sinuous, non-sag steel springs provide shock absorbing support. Features attractive antique brass nail accents. The removable legs have an Espresso finish. Adjustable levelers provide stability on uneven surfaces.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          { "spec_name": "Product Height", "spec_value": "83.82 cm" },
+          { "spec_name": "Product width", "spec_value": "83.82" },
+          { "spec_name": "Material", "spec_value": "Poliester" },
+          {
+            "spec_name": "Care and Cleaning Instructions",
+            "spec_value": "Rotate the cushions and vacuum under them regularly. To avoid discoloration"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": { "width": 696, "height": 900 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/5776d3aa-05fe-472e-8971-f7c4ecba17f1_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": { "width": 940, "height": 1215 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/aa3743e9-fab0-41ac-af94-2d7589a6193e_2.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": { "width": 696, "height": 900 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/4f58f6ae-7caa-4f90-a8e8-a640d4bfd977_3.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 6,
+        "price": 531.03
+      }
+    },
+    {
+      "id": "YWMCzxIAACkAzwFP",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWMCzxIAACkAzwFP%22%29+%5D%5D",
+      "tags": ["Living Room", "Armchair"],
+      "first_publication_date": "2021-10-10T15:12:18+0000",
+      "last_publication_date": "2021-10-10T15:12:18+0000",
+      "slugs": ["thatcher-armchair", "sillon-thatcher"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        { "id": "YWMCVBIAAC0Azv8g", "type": "product", "lang": "es-mx" }
+      ],
+      "data": {
+        "name": "Thatcher Armchair",
+        "sku": "1091702718",
+        "category": {
+          "id": "YWHviRIAACsAyjP3",
+          "type": "category",
+          "tags": [],
+          "slug": "furniture",
+          "lang": "en-us",
+          "first_publication_date": "2021-10-09T23:34:39+0000",
+          "last_publication_date": "2021-10-12T23:30:58+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": { "width": 696, "height": 900 },
+          "alt": "Thatcher Armchair",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/de78ba20-fbd5-45d6-92ef-8d7d6f55d2ad_1.webp?auto=compress,format"
+        },
+        "short_description": "The winged back chairs created by Thomas Chippendale in the 18th century were defined by their camel backs, oversized wings, and round arms.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "The winged back chairs created by Thomas Chippendale in the 18th century were defined by their camel backs, oversized wings, and round arms. Our interpretation preserves all the fine points of the originals, creating an armchair that is destined to become an heirloom. Features attractive nail head details. The legs are a fixed part of the frame and are finished in espresso. Block corner frame with mortise and tenon joinery provides exceptional structural integrity. Sinuous, non-sag steel springs provide shock absorbing support. Adjustable levelers provide stability on uneven floors.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          { "spec_name": "Product width", "spec_value": "78.74 cm" },
+          { "spec_name": "Product Height", "spec_value": "1.04 m" },
+          { "spec_name": "Product depth", "spec_value": "88.90 cm" },
+          { "spec_name": "Product Weight", "spec_value": "23 kg" },
+          { "spec_name": "Material", "spec_value": "Leather" }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": { "width": 696, "height": 900 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/de78ba20-fbd5-45d6-92ef-8d7d6f55d2ad_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": { "width": 696, "height": 900 },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/3b5d6134-ae1c-48ee-b087-39cbed10db9f_2.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 6,
+        "price": 1931.13
+      }
+    }
+  ],
+  "version": "31acd9d",
+  "license": "This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/."
+}
