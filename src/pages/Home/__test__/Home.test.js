@@ -18,16 +18,16 @@ describe("Home Page", () => {
     ).toBeInTheDocument();
 
     for (const banner of banners) {
-      expect(() =>
-        screen.getByText(banner.data.title, { selector: "h4" })
-      ).toThrow("Unable to find an element");
+      expect(
+        screen.queryByText(banner.data.title, { selector: "h4" })
+      ).not.toBeInTheDocument();
     }
 
     //Finished loading
     await waitFor(() => {
-      expect(() => screen.getByTestId("loader", { selector: "div" })).toThrow(
-        "Unable to find an element"
-      );
+      expect(
+        screen.queryByTestId("loader", { selector: "div" })
+      ).not.toBeInTheDocument();
     });
 
     for (const banner of banners) {
@@ -46,16 +46,16 @@ describe("Home Page", () => {
     ).toBeInTheDocument();
 
     for (const category of categories) {
-      expect(() =>
-        screen.getByText(category.data.name, { selector: "h4" })
-      ).toThrow("Unable to find an element");
+      expect(
+        screen.queryByText(category.data.name, { selector: "h4" })
+      ).not.toBeInTheDocument();
     }
 
     //Finished loading
     await waitFor(() => {
-      expect(() => screen.getByTestId("loader", { selector: "div" })).toThrow(
-        "Unable to find an element"
-      );
+      expect(
+        screen.queryByTestId("loader", { selector: "div" })
+      ).not.toBeInTheDocument();
     });
 
     for (const category of categories) {
@@ -73,16 +73,16 @@ describe("Home Page", () => {
     ).toBeInTheDocument();
 
     for (const product of products) {
-      expect(() =>
-        screen.getByText(product.data.name, { selector: "h4" })
-      ).toThrow("Unable to find an element");
+      expect(
+        screen.queryByText(product.data.name, { selector: "h4" })
+      ).not.toBeInTheDocument();
     }
 
     //Finished loading
     await waitFor(() => {
-      expect(() => screen.getByTestId("loader", { selector: "div" })).toThrow(
-        "Unable to find an element"
-      );
+      expect(
+        screen.queryByTestId("loader", { selector: "div" })
+      ).not.toBeInTheDocument();
     });
 
     for (const product of products) {

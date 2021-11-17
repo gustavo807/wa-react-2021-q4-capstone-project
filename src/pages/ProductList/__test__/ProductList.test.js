@@ -22,9 +22,7 @@ describe("Product List", () => {
   it("should filter products when clicking on a category link", async () => {
     const categoryLink = await screen.findByText(/Kitchen/i);
 
-    expect(() => screen.getByText(/No Products found./i)).toThrow(
-      "Unable to find an element"
-    );
+    expect(screen.queryByText(/No Products found./i)).not.toBeInTheDocument();
 
     fireEvent.click(categoryLink);
 

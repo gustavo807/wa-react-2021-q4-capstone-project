@@ -23,19 +23,19 @@ describe("Shopping Cart with initial state", () => {
   });
 
   it("should validate the list of the products is shown when there are items in the cart", () => {
-    const products = initialState.cart.products;
+    const { products } = initialState.cart;
     const { format } = formatter;
 
     for (const product of products) {
-      const price = format(product.data.price);
-      const subtotal = format(product.data.price * product.quantity);
+      const formattedPrice = format(product.data.price);
+      const formattedSubtotal = format(product.data.price * product.quantity);
 
       expect(screen.getByText(product.data.name)).toBeInTheDocument();
       expect(screen.getByTestId(`price-${product.id}`)).toHaveTextContent(
-        price
+        formattedPrice
       );
       expect(screen.getByTestId(`subtotal-${product.id}`)).toHaveTextContent(
-        subtotal
+        formattedSubtotal
       );
       expect(
         screen.getByTestId(`remove-icon-${product.id}`)
@@ -52,12 +52,12 @@ describe("Shopping Cart with initial state", () => {
   });
 
   it("should update the total items in the cart when using the quantity selector for a particular product and validate the out of stock", () => {
-    const product = initialState.cart.products[0];
-    const stock = product.data.stock;
-    const currQuantity = product.quantity;
+    const [firstProduct] = initialState.cart.products;
+    const { stock } = firstProduct.data;
+    const currQuantity = firstProduct.quantity;
     const countItems = initialState.cart.count;
 
-    const increment = screen.getByTestId(`increment-${product.id}`);
+    const increment = screen.getByTestId(`increment-${firstProduct.id}`);
     const totalCount = screen.getByTestId("total-count");
 
     expect(increment).not.toBeDisabled();
@@ -75,29 +75,25 @@ describe("Shopping Cart with initial state", () => {
   });
 
   it("should validate that a product can be removed after clicking on the remove icon", () => {
-    const product = initialState.cart.products[0];
-    const removeIcon = screen.getByTestId(`remove-icon-${product.id}`);
+    const [firstProduct] = initialState.cart.products;
+    const removeIcon = screen.getByTestId(`remove-icon-${firstProduct.id}`);
 
-    expect(screen.getByText(product.data.name)).toBeInTheDocument();
+    expect(screen.getByText(firstProduct.data.name)).toBeInTheDocument();
 
     fireEvent.click(removeIcon);
 
-    expect(() => screen.getByText(product.data.name)).toThrow(
-      "Unable to find an element"
-    );
+    expect(screen.queryByText(firstProduct.data.name)).not.toBeInTheDocument();
   });
 
   it("should show the total items in the cart", async () => {
     const totalCount = screen.getByTestId("total-count");
-    const count = initialState.cart.count;
+    const { count } = initialState.cart;
 
     expect(totalCount).toHaveTextContent(`(${count})`);
   });
 
   it("should show the empty state message when clicking on clear shopping cart button", () => {
-    expect(() => screen.getByText(/Shopping Cart is Empty/i)).toThrow(
-      "Unable to find an element"
-    );
+    expect(screen.queryByText(/Shopping Cart is Empty/i)).not.toBeInTheDocument();
 
     const clearCart = screen.getByText(/Clear Shopping Cart/i, {
       selector: "button",

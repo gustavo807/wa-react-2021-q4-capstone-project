@@ -12,15 +12,14 @@ describe("Product Detail", () => {
   });
 
   it("should fetch and render product data from API", async () => {
-    const product = productData.results[0];
+    const [firstProduct] = productData.results;
     const { format } = formatter;
 
-    const name = product.data.name;
-    const price = format(product.data.price);
-    const sku = product.data.sku;
-    const category = product.data.category.slug;
-    const description = product.data.description[0].text;
-    const tags = product.tags;
+    const { name, sku } = firstProduct.data;
+    const formattedPrice = format(firstProduct.data.price);
+    const category = firstProduct.data.category.slug;
+    const description = firstProduct.data.description[0].text;
+    const { tags } = firstProduct;
 
     // Start Loading
     expect(
@@ -29,16 +28,16 @@ describe("Product Detail", () => {
 
     //Finished loading
     await waitFor(() => {
-      expect(() => screen.getByTestId("loader", { selector: "div" })).toThrow(
-        "Unable to find an element"
-      );
+      expect(
+        screen.queryByTestId("loader", { selector: "div" })
+      ).not.toBeInTheDocument();
     });
 
     //Product data
     expect(screen.getByText(name, { selector: "span" })).toBeInTheDocument();
 
     expect(
-      screen.getByText(`Price: ${price}`, { selector: "span" })
+      screen.getByText(`Price: ${formattedPrice}`, { selector: "span" })
     ).toBeInTheDocument();
 
     expect(
@@ -81,8 +80,8 @@ describe("Product Detail", () => {
   });
 
   it("should validate the Out of stock functionality, the Add to Cart button is disabled", async () => {
-    const product = productData.results[0];
-    const stock = product.data.stock;
+    const [firstProduct] = productData.results;
+    const { stock } = firstProduct.data;
 
     const increment = await screen.findByRole("button", {
       name: "+",
@@ -93,9 +92,9 @@ describe("Product Detail", () => {
       screen.getByText(/Add To Cart/i, { selector: "button" })
     ).toBeInTheDocument();
     //The Out of stock message doesn't exists
-    expect(() =>
-      screen.getByText(/Out of stock/i, { selector: "span" })
-    ).toThrow("Unable to find an element");
+    expect(
+      screen.queryByText(/Out of stock/i, { selector: "span" })
+    ).not.toBeInTheDocument();
 
     //Increment quantity
     for (let index = 1; index < stock; index++) {
@@ -111,8 +110,8 @@ describe("Product Detail", () => {
       screen.getByText(/Out of stock/i, { selector: "span" })
     ).toBeInTheDocument();
     //The Add to Cart button doesn't exists
-    expect(() =>
-      screen.getByText(/Add To Cart/i, { selector: "button" })
-    ).toThrow("Unable to find an element");
+    expect(
+      screen.queryByText(/Add To Cart/i, { selector: "button" })
+    ).not.toBeInTheDocument();
   });
 });
