@@ -6,12 +6,6 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 
-// Start the mocking conditionally.
-if (process.env.NODE_ENV === "development") {
-  const { worker } = require("./mocks/browser");
-  worker.start();
-}
-
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
