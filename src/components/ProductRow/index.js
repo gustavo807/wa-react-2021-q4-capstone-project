@@ -48,8 +48,10 @@ function ProductRow(props) {
           </StyledLink>
         </Flex>
       </td>
-      <CenterCell>{format(price)}</CenterCell>
-      <CenterCell>
+      <CenterCell data-testid={`price-${product.id}`}>
+        {format(price)}
+      </CenterCell>
+      <CenterCell data-testid={`quantity-${product.id}`}>
         <Flex container justifyContent="center">
           <Quantity
             quantity={quantity}
@@ -57,13 +59,20 @@ function ProductRow(props) {
             handleDecrement={handleDecrement}
             isDownDisabled={isDownDisabled}
             isUpDisabled={isUpDisabled}
+            id={product.id}
           />
         </Flex>
       </CenterCell>
-      <CenterCell>{format(price * product.quantity)}</CenterCell>
+      <CenterCell data-testid={`subtotal-${product.id}`}>
+        {format(price * product.quantity)}
+      </CenterCell>
       <CenterCell>
         <Flex container justifyContent="center" mobileFlexDirection="row">
-          <StyledRemove onClick={handleRemove} icon-role="remove" />
+          <StyledRemove
+            onClick={handleRemove}
+            icon-role="remove"
+            data-testid={`remove-icon-${product.id}`}
+          />
         </Flex>
       </CenterCell>
     </tr>
@@ -81,7 +90,7 @@ ProductRow.propTypes = {
       }),
       mainimage: PropTypes.shape({
         url: PropTypes.string.isRequired,
-        alt: PropTypes.string.isRequired,
+        alt: PropTypes.string,
       }),
     }),
   }),

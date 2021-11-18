@@ -44,9 +44,13 @@ const Pagination = (props) => {
       >
         &laquo;
       </Item>
-      {paginationRange.map((pageNumber) => {
+      {paginationRange.map((pageNumber, index) => {
         if (pageNumber === DOTS) {
-          return <Item className="dots">&#8230;</Item>;
+          return (
+            <Item key={`dots-${pageNumber}-${index}`} className="dots">
+              &#8230;
+            </Item>
+          );
         }
 
         return (

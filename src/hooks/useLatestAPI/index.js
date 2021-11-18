@@ -8,6 +8,7 @@ function useLatestAPI() {
 
   useEffect(() => {
     const controller = new AbortController();
+    let isMounted = true;
 
     async function getAPIMetadata() {
       try {
@@ -20,8 +21,10 @@ function useLatestAPI() {
 
         setApiMetadata({ ref, isLoading: false });
       } catch (err) {
-        setApiMetadata({ ref: null, isLoading: false });
-        console.error(err);
+        if (isMounted) {
+          setApiMetadata({ ref: null, isLoading: false });
+          console.error(err);
+        }
       }
     }
 
@@ -29,6 +32,7 @@ function useLatestAPI() {
 
     return () => {
       controller.abort();
+      isMounted = false;
     };
   }, []);
 

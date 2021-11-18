@@ -8,15 +8,24 @@ function Quantity(props) {
     handleDecrement,
     isUpDisabled,
     isDownDisabled,
+    id,
   } = props;
 
   return (
     <Flex container>
-      <Button disabled={isDownDisabled} onClick={handleDecrement}>
+      <Button
+        disabled={isDownDisabled}
+        onClick={handleDecrement}
+        data-testid={`decrement-${id}`}
+      >
         -
       </Button>
       <Input type="number" value={quantity} disabled />
-      <Button disabled={isUpDisabled} onClick={handleIncrement}>
+      <Button
+        disabled={isUpDisabled}
+        onClick={handleIncrement}
+        data-testid={`increment-${id}`}
+      >
         +
       </Button>
     </Flex>
@@ -29,6 +38,11 @@ Quantity.propTypes = {
   handleIncrement: PropTypes.func.isRequired,
   isUpDisabled: PropTypes.bool.isRequired,
   isDownDisabled: PropTypes.bool.isRequired,
+  id: PropTypes.string,
+};
+
+Quantity.defaultProps = {
+  id: "0",
 };
 
 export default Quantity;

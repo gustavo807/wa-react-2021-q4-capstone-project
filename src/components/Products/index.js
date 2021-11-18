@@ -38,7 +38,7 @@ Products.propTypes = {
         }),
         mainimage: PropTypes.shape({
           url: PropTypes.string.isRequired,
-          alt: PropTypes.string.isRequired,
+          alt: PropTypes.string,
         }),
       }),
     })
