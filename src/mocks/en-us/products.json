@@ -1,6 +1,6 @@
 {
   "page": 1,
-  "results_per_page": 100,
+  "results_per_page": 50,
   "results_size": 29,
   "total_results_size": 29,
   "total_pages": 1,
@@ -8,91 +8,11 @@
   "prev_page": null,
   "results": [
     {
-      "id": "YWMHuxIAAC8Azxdw",
-      "uid": null,
-      "url": null,
-      "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWMHuxIAAC8Azxdw%22%29+%5D%5D",
-      "tags": ["Living Room", "Armchair", "Featured"],
-      "first_publication_date": "2021-10-10T15:33:18+0000",
-      "last_publication_date": "2021-10-25T22:58:21+0000",
-      "slugs": ["grayton-armchair", "sillon-grayton"],
-      "linked_documents": [],
-      "lang": "en-us",
-      "alternate_languages": [
-        { "id": "YWMHGxIAAC4AzxSn", "type": "product", "lang": "es-mx" }
-      ],
-      "data": {
-        "name": "Grayton Armchair",
-        "sku": "1105659063",
-        "category": {
-          "id": "YWHviRIAACsAyjP3",
-          "type": "category",
-          "tags": [],
-          "slug": "furniture",
-          "lang": "en-us",
-          "first_publication_date": "2021-10-09T23:34:39+0000",
-          "last_publication_date": "2021-10-12T23:30:58+0000",
-          "link_type": "Document",
-          "isBroken": false
-        },
-        "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
-          "alt": "Grayton Armchair",
-          "copyright": null,
-          "url": "https://images.prismic.io/wizeline-academy/2a136772-dcee-4eba-9da4-ad3468504bdb_1.webp?auto=compress,format"
-        },
-        "short_description": "Inclined arm. The cushions are not removable. The kiln-dried, corner-locked rubber wood frame provides exceptional structural integrity.",
-        "description": [
-          {
-            "type": "paragraph",
-            "text": "Inclined arm. The cushions are not removable. The kiln-dried, corner-locked rubber wood frame provides exceptional structural integrity. Kiln-dried wood helps prevent warping, splitting, cracking, and the development of mold. Premium quality, aniline dyed. The skin will soften and clear with use and the passage of time, developing an elegant patina. Leather is a natural product. Variations in color and texture are inherent to each skin; no two pieces are exactly alike. The cushion is supported by steel springs that do not sag. Fixed legs have a natural distressed finish. Polyester wrapped cushions for a firmer feel.",
-            "spans": []
-          }
-        ],
-        "specs": [
-          { "spec_name": "Style", "spec_value": "Contemporary" },
-          { "spec_name": "Leg shape", "spec_value": "Conical" },
-          { "spec_name": "Color", "spec_value": "Brown" },
-          { "spec_name": "Collection", "spec_value": "Grayton" },
-          { "spec_name": "Product width", "spec_value": "77.47 cm" },
-          { "spec_name": "Product height", "spec_value": "77.47 cm" },
-          { "spec_name": "Product depth", "spec_value": "71.12 cm" },
-          {
-            "spec_name": "Care and cleaning instructions",
-            "spec_value": "Never use detergents"
-          },
-          { "spec_name": "Material", "spec_value": "Leather" },
-          { "spec_name": "Structure Material", "spec_value": "Wood" }
-        ],
-        "images": [
-          {
-            "image": {
-              "dimensions": { "width": 696, "height": 900 },
-              "alt": null,
-              "copyright": null,
-              "url": "https://images.prismic.io/wizeline-academy/2a136772-dcee-4eba-9da4-ad3468504bdb_1.webp?auto=compress,format"
-            }
-          },
-          {
-            "image": {
-              "dimensions": { "width": 696, "height": 900 },
-              "alt": null,
-              "copyright": null,
-              "url": "https://images.prismic.io/wizeline-academy/577b9bc0-122a-44bb-b8a4-dd75d8689566_2.webp?auto=compress,format"
-            }
-          }
-        ],
-        "stock": 8,
-        "price": 1689.74
-      }
-    },
-    {
       "id": "YWL8XBIAAC0AzuPZ",
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWL8XBIAAC0AzuPZ%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWL8XBIAAC0AzuPZ%22%29+%5D%5D",
       "tags": ["Living Room", "Sofa"],
       "first_publication_date": "2021-10-10T14:44:47+0000",
       "last_publication_date": "2021-10-10T14:44:47+0000",
@@ -100,7 +20,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWL7yBIAAC8AzuFJ", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWL7yBIAAC8AzuFJ",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Tallulah Sofa Gray",
@@ -117,7 +41,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Tallulah Sofa Gray",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/fa394f7d-4d89-4c90-86b3-832de74928fa_1.webp?auto=compress,format"
@@ -131,11 +58,26 @@
           }
         ],
         "specs": [
-          { "spec_name": "Product Height", "spec_value": "88.90 cm" },
-          { "spec_name": "Product width", "spec_value": "187 cm" },
-          { "spec_name": "Product depth", "spec_value": "101 cm" },
-          { "spec_name": "Product Weight", "spec_value": "56.69 kg" },
-          { "spec_name": "Material", "spec_value": "Cloth" },
+          {
+            "spec_name": "Product Height",
+            "spec_value": "88.90 cm"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "187 cm"
+          },
+          {
+            "spec_name": "Product depth",
+            "spec_value": "101 cm"
+          },
+          {
+            "spec_name": "Product Weight",
+            "spec_value": "56.69 kg"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Cloth"
+          },
           {
             "spec_name": "Care and Cleaning Instructions",
             "spec_value": "Rotate the cushions and vacuum under them regularly. To avoid discoloration"
@@ -144,7 +86,10 @@
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/fa394f7d-4d89-4c90-86b3-832de74928fa_1.webp?auto=compress,format"
@@ -152,7 +97,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/3b54d7d6-5033-4aad-a8f0-eb84032659c0_2.jpeg?auto=compress,format"
@@ -160,7 +108,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/58dbb943-d02c-4c9b-aed1-c17d47c5476c_3.jpeg?auto=compress,format"
@@ -168,7 +119,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/910fb56b-e21b-44f9-9f87-3bd2cea8262e_4.webp?auto=compress,format"
@@ -176,7 +130,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/2d6cb851-6f38-46c9-870a-c5f374a927ca_5.webp?auto=compress,format"
@@ -184,7 +141,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/9ff1a54a-986b-49fc-a5c4-78d6aca246db_6.webp?auto=compress,format"
@@ -192,7 +152,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 940, "height": 1215 },
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/f7551c24-90b0-4fcc-8d45-86157eafa799_7.webp?auto=compress,format"
@@ -200,7 +163,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/8332d09a-6fa3-4786-a2a8-2b99c9b45df9_8.webp?auto=compress,format"
@@ -216,7 +182,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJKhBIAACkAy8ew%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJKhBIAACkAy8ew%22%29+%5D%5D",
       "tags": ["Living Room", "Armchair"],
       "first_publication_date": "2021-10-10T02:06:01+0000",
       "last_publication_date": "2021-10-10T02:32:29+0000",
@@ -227,7 +193,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWJKIRIAAC4Ay8X8", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWJKIRIAAC4Ay8X8",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Tyler Poly Reclining Leather Armchair",
@@ -244,7 +214,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Tyler Poly Reclining Leather Armchair",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/6b30b79d-12c6-4411-9808-2f629d141afe_1.webp?auto=compress,format"
@@ -266,7 +239,10 @@
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/6b30b79d-12c6-4411-9808-2f629d141afe_1.webp?auto=compress,format"
@@ -274,7 +250,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/19f55831-0fe7-4edb-9ec2-f9c36d96e794_2.webp?auto=compress,format"
@@ -282,7 +261,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/f3a12c69-d72c-4f9d-a1f8-30aafdd99ab3_3.webp?auto=compress,format"
@@ -290,7 +272,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/88726a94-ce05-4187-a826-c00f4bcc4a2b_4.jpeg?auto=compress,format"
@@ -298,7 +283,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/949c4996-5949-4ce9-a714-3c83562b4708_5.jpeg?auto=compress,format"
@@ -310,11 +298,131 @@
       }
     },
     {
+      "id": "YWMHuxIAAC8Azxdw",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWMHuxIAAC8Azxdw%22%29+%5D%5D",
+      "tags": ["Living Room", "Armchair"],
+      "first_publication_date": "2021-10-10T15:33:18+0000",
+      "last_publication_date": "2021-10-10T15:33:18+0000",
+      "slugs": ["grayton-armchair", "sillon-grayton"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YWMHGxIAAC4AzxSn",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Grayton Armchair",
+        "sku": "1105659063",
+        "category": {
+          "id": "YWHviRIAACsAyjP3",
+          "type": "category",
+          "tags": [],
+          "slug": "furniture",
+          "lang": "en-us",
+          "first_publication_date": "2021-10-09T23:34:39+0000",
+          "last_publication_date": "2021-10-12T23:30:58+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Grayton Armchair",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/2a136772-dcee-4eba-9da4-ad3468504bdb_1.webp?auto=compress,format"
+        },
+        "short_description": "Inclined arm. The cushions are not removable. The kiln-dried, corner-locked rubber wood frame provides exceptional structural integrity.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Inclined arm. The cushions are not removable. The kiln-dried, corner-locked rubber wood frame provides exceptional structural integrity. Kiln-dried wood helps prevent warping, splitting, cracking, and the development of mold. Premium quality, aniline dyed. The skin will soften and clear with use and the passage of time, developing an elegant patina. Leather is a natural product. Variations in color and texture are inherent to each skin; no two pieces are exactly alike. The cushion is supported by steel springs that do not sag. Fixed legs have a natural distressed finish. Polyester wrapped cushions for a firmer feel.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Style",
+            "spec_value": "Contemporary"
+          },
+          {
+            "spec_name": "Leg shape",
+            "spec_value": "Conical"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Brown"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Grayton"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "77.47 cm"
+          },
+          {
+            "spec_name": "Product height",
+            "spec_value": "77.47 cm"
+          },
+          {
+            "spec_name": "Product depth",
+            "spec_value": "71.12 cm"
+          },
+          {
+            "spec_name": "Care and cleaning instructions",
+            "spec_value": "Never use detergents"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Leather"
+          },
+          {
+            "spec_name": "Structure Material",
+            "spec_value": "Wood"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/2a136772-dcee-4eba-9da4-ad3468504bdb_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/577b9bc0-122a-44bb-b8a4-dd75d8689566_2.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 8,
+        "price": 1689.74
+      }
+    },
+    {
       "id": "YWMCzxIAACkAzwFP",
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWMCzxIAACkAzwFP%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWMCzxIAACkAzwFP%22%29+%5D%5D",
       "tags": ["Living Room", "Armchair"],
       "first_publication_date": "2021-10-10T15:12:18+0000",
       "last_publication_date": "2021-10-10T15:12:18+0000",
@@ -322,7 +430,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWMCVBIAAC0Azv8g", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWMCVBIAAC0Azv8g",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Thatcher Armchair",
@@ -339,7 +451,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Thatcher Armchair",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/de78ba20-fbd5-45d6-92ef-8d7d6f55d2ad_1.webp?auto=compress,format"
@@ -353,16 +468,34 @@
           }
         ],
         "specs": [
-          { "spec_name": "Product width", "spec_value": "78.74 cm" },
-          { "spec_name": "Product Height", "spec_value": "1.04 m" },
-          { "spec_name": "Product depth", "spec_value": "88.90 cm" },
-          { "spec_name": "Product Weight", "spec_value": "23 kg" },
-          { "spec_name": "Material", "spec_value": "Leather" }
+          {
+            "spec_name": "Product width",
+            "spec_value": "78.74 cm"
+          },
+          {
+            "spec_name": "Product Height",
+            "spec_value": "1.04 m"
+          },
+          {
+            "spec_name": "Product depth",
+            "spec_value": "88.90 cm"
+          },
+          {
+            "spec_name": "Product Weight",
+            "spec_value": "23 kg"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Leather"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/de78ba20-fbd5-45d6-92ef-8d7d6f55d2ad_1.webp?auto=compress,format"
@@ -370,7 +503,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/3b5d6134-ae1c-48ee-b087-39cbed10db9f_2.webp?auto=compress,format"
@@ -386,7 +522,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWL44xIAACoAztQQ%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWL44xIAACoAztQQ%22%29+%5D%5D",
       "tags": ["Living Room", "Armchair"],
       "first_publication_date": "2021-10-10T14:29:59+0000",
       "last_publication_date": "2021-10-10T14:29:59+0000",
@@ -394,7 +530,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWL4OBIAAC0AztEY", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWL4OBIAAC0AztEY",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Shay Armchair",
@@ -411,7 +551,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Shay Armchair",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/cc2dab1a-a0b7-4809-9da6-35f5fc2883cf_1.webp?auto=compress,format"
@@ -425,20 +568,50 @@
           }
         ],
         "specs": [
-          { "spec_name": "Style", "spec_value": "Contemporary" },
-          { "spec_name": "Leg shape", "spec_value": "Square" },
-          { "spec_name": "Backing type", "spec_value": "Continuous" },
-          { "spec_name": "Color", "spec_value": "Beige" },
-          { "spec_name": "Collection", "spec_value": "Shay" },
-          { "spec_name": "Product width", "spec_value": "64.77 cm" },
-          { "spec_name": "Product height", "spec_value": "78.74 cm" },
-          { "spec_name": "Product depth", "spec_value": "73.66 cm" },
-          { "spec_name": "Product weight", "spec_value": "13.38 kg" }
+          {
+            "spec_name": "Style",
+            "spec_value": "Contemporary"
+          },
+          {
+            "spec_name": "Leg shape",
+            "spec_value": "Square"
+          },
+          {
+            "spec_name": "Backing type",
+            "spec_value": "Continuous"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Beige"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Shay"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "64.77 cm"
+          },
+          {
+            "spec_name": "Product height",
+            "spec_value": "78.74 cm"
+          },
+          {
+            "spec_name": "Product depth",
+            "spec_value": "73.66 cm"
+          },
+          {
+            "spec_name": "Product weight",
+            "spec_value": "13.38 kg"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/cc2dab1a-a0b7-4809-9da6-35f5fc2883cf_1.webp?auto=compress,format"
@@ -446,7 +619,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/549bbc1a-54bd-4748-9bfb-9ae3ed002411_2.webp?auto=compress,format"
@@ -454,7 +630,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/00c25220-1942-48f0-a97c-00878340afd9_3.jpeg?auto=compress,format"
@@ -462,7 +641,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/62de6ba4-2757-4b45-9c54-689f4f01d5ee_4.webp?auto=compress,format"
@@ -470,7 +652,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/83be713b-8272-48eb-955c-7a820d4fdf0e_5.jpeg?auto=compress,format"
@@ -478,7 +663,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/1202953a-e0e1-414a-91ec-def6ebbdd12c_6.jpeg?auto=compress,format"
@@ -486,7 +674,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/d26d6762-9943-4827-8018-2a1d751ea51b_7.jpeg?auto=compress,format"
@@ -494,7 +685,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/eccffe85-3f7d-4c0f-bc32-858881a1f2a8_8.jpeg?auto=compress,format"
@@ -510,7 +704,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWMBVRIAAC0Azvp7%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWMBVRIAAC0Azvp7%22%29+%5D%5D",
       "tags": ["Living Room", "Armchair"],
       "first_publication_date": "2021-10-10T15:06:00+0000",
       "last_publication_date": "2021-10-10T15:06:00+0000",
@@ -518,7 +712,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWMAjhIAAC0Azvbo", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWMAjhIAAC0Azvbo",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Spear Armchair",
@@ -535,7 +733,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Spear Armchair",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/0d340f60-059a-43d7-8311-490815d3a8e8_1.webp?auto=compress,format"
@@ -549,21 +750,54 @@
           }
         ],
         "specs": [
-          { "spec_name": "Style", "spec_value": "Contemporary" },
-          { "spec_name": "Leg shape", "spec_value": "Square" },
-          { "spec_name": "Arms Type", "spec_value": "Roll arm" },
-          { "spec_name": "Seat Type", "spec_value": "Fixed seats" },
-          { "spec_name": "Color", "spec_value": "Gray" },
-          { "spec_name": "Collection", "spec_value": "Spear" },
-          { "spec_name": "Product width", "spec_value": "73.66 cm" },
-          { "spec_name": "Product height", "spec_value": "77.47 cm" },
-          { "spec_name": "Product weight", "spec_value": "19.50 kg" },
-          { "spec_name": "Product depth", "spec_value": "77.47 cm" }
+          {
+            "spec_name": "Style",
+            "spec_value": "Contemporary"
+          },
+          {
+            "spec_name": "Leg shape",
+            "spec_value": "Square"
+          },
+          {
+            "spec_name": "Arms Type",
+            "spec_value": "Roll arm"
+          },
+          {
+            "spec_name": "Seat Type",
+            "spec_value": "Fixed seats"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Gray"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Spear"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "73.66 cm"
+          },
+          {
+            "spec_name": "Product height",
+            "spec_value": "77.47 cm"
+          },
+          {
+            "spec_name": "Product weight",
+            "spec_value": "19.50 kg"
+          },
+          {
+            "spec_name": "Product depth",
+            "spec_value": "77.47 cm"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/0d340f60-059a-43d7-8311-490815d3a8e8_1.webp?auto=compress,format"
@@ -571,7 +805,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/89d31aeb-cbc3-4096-9e1a-b952327cc5da_2.webp?auto=compress,format"
@@ -579,7 +816,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/1663f446-83db-4bb0-8724-0fae1a4d117e_3.webp?auto=compress,format"
@@ -587,7 +827,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/fcd98606-a9e7-4a32-86c5-6894ca0c6b87_4.webp?auto=compress,format"
@@ -595,7 +838,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/06ad3094-880e-47a9-9632-ee2b05757eb7_5.webp?auto=compress,format"
@@ -603,7 +849,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/a223a04b-d6e5-4abf-a163-a10d89242622_6.webp?auto=compress,format"
@@ -619,7 +868,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJG9xIAAC8Ay7f6%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJG9xIAAC8Ay7f6%22%29+%5D%5D",
       "tags": ["Living Room", "Armchair"],
       "first_publication_date": "2021-10-10T01:50:52+0000",
       "last_publication_date": "2021-10-10T02:31:10+0000",
@@ -627,7 +876,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWJGghIAAC4Ay7Xz", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWJGghIAAC4Ay7Xz",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Roscoe Armchair Gray",
@@ -644,7 +897,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Roscoe Armchair Gray",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/5776d3aa-05fe-472e-8971-f7c4ecba17f1_1.webp?auto=compress,format"
@@ -658,9 +914,18 @@
           }
         ],
         "specs": [
-          { "spec_name": "Product Height", "spec_value": "83.82 cm" },
-          { "spec_name": "Product width", "spec_value": "83.82" },
-          { "spec_name": "Material", "spec_value": "Poliester" },
+          {
+            "spec_name": "Product Height",
+            "spec_value": "83.82 cm"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "83.82"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Poliester"
+          },
           {
             "spec_name": "Care and Cleaning Instructions",
             "spec_value": "Rotate the cushions and vacuum under them regularly. To avoid discoloration"
@@ -669,7 +934,10 @@
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/5776d3aa-05fe-472e-8971-f7c4ecba17f1_1.webp?auto=compress,format"
@@ -677,7 +945,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 940, "height": 1215 },
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/aa3743e9-fab0-41ac-af94-2d7589a6193e_2.webp?auto=compress,format"
@@ -685,7 +956,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/4f58f6ae-7caa-4f90-a8e8-a640d4bfd977_3.webp?auto=compress,format"
@@ -701,7 +975,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJI7hIAACkAy8Cv%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJI7hIAACkAy8Cv%22%29+%5D%5D",
       "tags": ["Living Room", "Sofa"],
       "first_publication_date": "2021-10-10T01:59:13+0000",
       "last_publication_date": "2021-10-10T02:31:47+0000",
@@ -712,7 +986,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWJIfhIAACkAy77B", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWJIfhIAACkAy77B",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Chesterfield Sofa Dark Brown",
@@ -729,7 +1007,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Chesterfield Sofa Dark Brown",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/83a43c82-a49c-4edc-b2e9-743e41a9849a_1.webp?auto=compress,format"
@@ -743,9 +1024,18 @@
           }
         ],
         "specs": [
-          { "spec_name": "Product Height", "spec_value": "77.47 cm" },
-          { "spec_name": "Product width", "spec_value": "2.18 m" },
-          { "spec_name": "Material", "spec_value": "Leather" },
+          {
+            "spec_name": "Product Height",
+            "spec_value": "77.47 cm"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "2.18 m"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Leather"
+          },
           {
             "spec_name": "Care and Cleaning Instructions",
             "spec_value": "Avoid direct sunlight and heat"
@@ -754,7 +1044,10 @@
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/83a43c82-a49c-4edc-b2e9-743e41a9849a_1.webp?auto=compress,format"
@@ -762,7 +1055,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/41374d14-fe39-493a-a38b-50f2d83f65b4_3.webp?auto=compress,format"
@@ -770,7 +1066,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/b09c7fea-3169-4300-87fe-1d9b5943e90e_4.jpeg?auto=compress,format"
@@ -778,7 +1077,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/0c9befff-bc9f-490b-aef2-780b0e576e89_5.webp?auto=compress,format"
@@ -786,7 +1088,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/101604fe-2570-45b0-a919-ecee8392bb07_6.jpeg?auto=compress,format"
@@ -794,7 +1099,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 940, "height": 1215 },
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/1d7ac3f8-5a9a-4a97-b8ef-21176e3838d4_7.jpeg?auto=compress,format"
@@ -810,7 +1118,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWL-9xIAACwAzu-s%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWL-9xIAACwAzu-s%22%29+%5D%5D",
       "tags": ["Living Room", "Armchair"],
       "first_publication_date": "2021-10-10T14:55:54+0000",
       "last_publication_date": "2021-10-10T14:55:54+0000",
@@ -821,7 +1129,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWL-nRIAACsAzu4G", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWL-nRIAACsAzu4G",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Brown Turner Right Arm Armchair",
@@ -838,7 +1150,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 940, "height": 1215 },
+          "dimensions": {
+            "width": 940,
+            "height": 1215
+          },
           "alt": "Brown Turner Right Arm Armchair",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/cd98a680-c834-43bd-86e4-478697e4eb7d_1.webp?auto=compress,format"
@@ -851,11 +1166,19 @@
             "spans": []
           }
         ],
-        "specs": [{ "spec_name": "Color", "spec_value": "Brown" }],
+        "specs": [
+          {
+            "spec_name": "Color",
+            "spec_value": "Brown"
+          }
+        ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 940, "height": 1215 },
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/cd98a680-c834-43bd-86e4-478697e4eb7d_1.webp?auto=compress,format"
@@ -863,7 +1186,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 940, "height": 1215 },
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/7bb20e36-0cae-4a9d-acb2-e097b011bb02_2.webp?auto=compress,format"
@@ -871,7 +1197,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 940, "height": 1215 },
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/87b3e260-7a20-467a-97d2-e18215df04fd_3.webp?auto=compress,format"
@@ -887,7 +1216,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJFhhIAACgAy7GY%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJFhhIAACgAy7GY%22%29+%5D%5D",
       "tags": ["Living Room", "Armchair"],
       "first_publication_date": "2021-10-10T01:44:43+0000",
       "last_publication_date": "2021-10-10T02:30:25+0000",
@@ -895,7 +1224,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWJFAxIAACkAy69T", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWJFAxIAACkAy69T",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Balboa Armchair",
@@ -912,7 +1245,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Balboa Armchair",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/22cea604-bb41-4b20-ab03-6d3482bddbd7_1.webp?auto=compress,format"
@@ -926,10 +1262,22 @@
           }
         ],
         "specs": [
-          { "spec_name": "Leg shape", "spec_value": "Circular" },
-          { "spec_name": "Seat Type", "spec_value": "Fixed seats" },
-          { "spec_name": "Color", "spec_value": "Beige" },
-          { "spec_name": "Product width", "spec_value": "101.60 cm" },
+          {
+            "spec_name": "Leg shape",
+            "spec_value": "Circular"
+          },
+          {
+            "spec_name": "Seat Type",
+            "spec_value": "Fixed seats"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Beige"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "101.60 cm"
+          },
           {
             "spec_name": "Care and cleaning instructions",
             "spec_value": "Rotate the cushions and vacuum under them regularly. To avoid discoloration"
@@ -938,7 +1286,10 @@
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/22cea604-bb41-4b20-ab03-6d3482bddbd7_1.webp?auto=compress,format"
@@ -946,7 +1297,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/1e8e4b98-c6a3-4af3-9048-c8a857415080_2.jpeg?auto=compress,format"
@@ -954,7 +1308,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/c06cd39e-da80-4a37-8487-82d8990599b9_3.jpeg?auto=compress,format"
@@ -962,7 +1319,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/bac94b84-0298-4a17-b235-1468563fda95_4.jpeg?auto=compress,format"
@@ -970,7 +1330,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/211a9a2d-db21-4783-be66-791cd30a77ab_5.jpeg?auto=compress,format"
@@ -978,7 +1341,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/de5f3e3f-ccf6-45f9-bee0-ab10df9f0e09_6.webp?auto=compress,format"
@@ -986,7 +1352,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/5fc4aa04-cb4d-4d54-8c99-39d302cff829_7.webp?auto=compress,format"
@@ -994,7 +1363,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/008703c1-fde6-412d-984c-59eb2f69adc8_8.webp?auto=compress,format"
@@ -1010,7 +1382,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWL9uRIAAC8AzuoG%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWL9uRIAAC8AzuoG%22%29+%5D%5D",
       "tags": ["Living Room", "Sofa"],
       "first_publication_date": "2021-10-10T14:50:36+0000",
       "last_publication_date": "2021-10-10T14:50:36+0000",
@@ -1018,7 +1390,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWL9WxIAACkAzuha", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWL9WxIAACkAzuha",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Comfort Aquare Arm Sofa",
@@ -1035,7 +1411,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Comfort Aquare Arm Sofa",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/b79dc562-b94b-46f5-b06a-b7251cca6fa6_1.webp?auto=compress,format"
@@ -1049,15 +1428,30 @@
           }
         ],
         "specs": [
-          { "spec_name": "Product Width", "spec_value": "1.95 m" },
-          { "spec_name": "Product Height", "spec_value": "93.98 cm" },
-          { "spec_name": "Product Depth", "spec_value": "99.06 cm" },
-          { "spec_name": "Material", "spec_value": "Cloth" }
+          {
+            "spec_name": "Product Width",
+            "spec_value": "1.95 m"
+          },
+          {
+            "spec_name": "Product Height",
+            "spec_value": "93.98 cm"
+          },
+          {
+            "spec_name": "Product Depth",
+            "spec_value": "99.06 cm"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Cloth"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/b79dc562-b94b-46f5-b06a-b7251cca6fa6_1.webp?auto=compress,format"
@@ -1065,7 +1459,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/9054009e-7745-487b-ba7f-5d71309b272c_2.webp?auto=compress,format"
@@ -1073,7 +1470,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/d201455c-f660-4fb1-ba84-b70ca599b694_3.webp?auto=compress,format"
@@ -1081,7 +1481,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/dc94ab10-d932-42db-b366-bbbb81906dda_4.webp?auto=compress,format"
@@ -1097,7 +1500,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWL6YBIAAC0AztrR%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWL6YBIAAC0AztrR%22%29+%5D%5D",
       "tags": ["Living Room", "Sofa"],
       "first_publication_date": "2021-10-10T14:36:19+0000",
       "last_publication_date": "2021-10-10T14:36:19+0000",
@@ -1105,7 +1508,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWL55BIAAC0AztiS", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWL55BIAAC0AztiS",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "PB Comfort Roll Arm Sofa",
@@ -1122,7 +1529,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "PB Comfort Roll Arm Sofa",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/e2a81c09-19b9-42d0-b724-cf0120a7af62_1.webp?auto=compress,format"
@@ -1136,10 +1546,22 @@
           }
         ],
         "specs": [
-          { "spec_name": "Product Width", "spec_value": "2.10 m" },
-          { "spec_name": "Product Height", "spec_value": "93.98 cm" },
-          { "spec_name": "Product Depth", "spec_value": "99.06 cm" },
-          { "spec_name": "Color", "spec_value": "Sand" },
+          {
+            "spec_name": "Product Width",
+            "spec_value": "2.10 m"
+          },
+          {
+            "spec_name": "Product Height",
+            "spec_value": "93.98 cm"
+          },
+          {
+            "spec_name": "Product Depth",
+            "spec_value": "99.06 cm"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Sand"
+          },
           {
             "spec_name": "Care and Cleaning Instructions",
             "spec_value": "Clean with a soft, dry cloth"
@@ -1148,7 +1570,10 @@
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/e2a81c09-19b9-42d0-b724-cf0120a7af62_1.webp?auto=compress,format"
@@ -1156,7 +1581,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/bfe276e5-98f6-40bf-aa07-8810ca69d265_2.webp?auto=compress,format"
@@ -1172,7 +1600,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWMGAhIAACwAzw-z%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWMGAhIAACwAzw-z%22%29+%5D%5D",
       "tags": ["Living Room", "Sofa"],
       "first_publication_date": "2021-10-10T15:25:57+0000",
       "last_publication_date": "2021-10-10T15:25:57+0000",
@@ -1180,7 +1608,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWMFgxIAACwAzw1x", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWMFgxIAACwAzw1x",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Big Sur Modular Room",
@@ -1197,7 +1629,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Big Sur Modular Room",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/2a6e48e0-7228-48f0-92eb-c385b17c54cf_1.webp?auto=compress,format"
@@ -1211,19 +1646,46 @@
           }
         ],
         "specs": [
-          { "spec_name": "Style", "spec_value": "Contemporary" },
-          { "spec_name": "Leg shape", "spec_value": "Square" },
-          { "spec_name": "Material", "spec_value": "Cloth" },
-          { "spec_name": "Color", "spec_value": "Khaki" },
-          { "spec_name": "Collection", "spec_value": "Big Sur" },
-          { "spec_name": "Product width", "spec_value": "289.56 cm" },
-          { "spec_name": "Product Height", "spec_value": "93.98 cm" },
-          { "spec_name": "Product depth", "spec_value": "172.72 cm" }
+          {
+            "spec_name": "Style",
+            "spec_value": "Contemporary"
+          },
+          {
+            "spec_name": "Leg shape",
+            "spec_value": "Square"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Cloth"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Khaki"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Big Sur"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "289.56 cm"
+          },
+          {
+            "spec_name": "Product Height",
+            "spec_value": "93.98 cm"
+          },
+          {
+            "spec_name": "Product depth",
+            "spec_value": "172.72 cm"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/2a6e48e0-7228-48f0-92eb-c385b17c54cf_1.webp?auto=compress,format"
@@ -1231,7 +1693,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/790362df-05da-4a77-9526-cf21a7a10aa0_2.webp?auto=compress,format"
@@ -1247,7 +1712,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWMEfBIAAC8Azwjd%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWMEfBIAAC8Azwjd%22%29+%5D%5D",
       "tags": ["Living Room", "Sofa"],
       "first_publication_date": "2021-10-10T15:19:27+0000",
       "last_publication_date": "2021-10-10T15:19:27+0000",
@@ -1258,7 +1723,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWMEABIAACwAzwau", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWMEABIAACwAzwau",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Pearce Modular Sofa Left Arm",
@@ -1275,7 +1744,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Pearce Modular Sofa Left Arm",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/2c9c96f1-eb77-4eca-91ad-ae6666ee0d27_1.webp?auto=compress,format"
@@ -1293,17 +1765,38 @@
             "spec_name": "Additional accessories",
             "spec_value": "Includes 4 seat cushions and 5 back cushions"
           },
-          { "spec_name": "Leg shape", "spec_value": "Square" },
-          { "spec_name": "Number of pieces", "spec_value": "3" },
-          { "spec_name": "Collection", "spec_value": "Pearce" },
-          { "spec_name": "Product width", "spec_value": "307.34 cm" },
-          { "spec_name": "Product Height", "spec_value": "96.52 cm" },
-          { "spec_name": "Product depth", "spec_value": "226.06 cm" }
+          {
+            "spec_name": "Leg shape",
+            "spec_value": "Square"
+          },
+          {
+            "spec_name": "Number of pieces",
+            "spec_value": "3"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Pearce"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "307.34 cm"
+          },
+          {
+            "spec_name": "Product Height",
+            "spec_value": "96.52 cm"
+          },
+          {
+            "spec_name": "Product depth",
+            "spec_value": "226.06 cm"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/2c9c96f1-eb77-4eca-91ad-ae6666ee0d27_1.webp?auto=compress,format"
@@ -1311,7 +1804,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/dae980b8-d18c-438c-907b-02b117888d42_2.webp?auto=compress,format"
@@ -1327,7 +1823,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWIyFhIAACoAy1s9%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWIyFhIAACoAy1s9%22%29+%5D%5D",
       "tags": ["Bedroom", "Bed"],
       "first_publication_date": "2021-10-10T00:21:49+0000",
       "last_publication_date": "2021-10-10T02:19:52+0000",
@@ -1335,7 +1831,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWIxohIAAC0Ay1k4", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWIxohIAAC0Ay1k4",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Farmhouse King Size Bed",
@@ -1352,7 +1852,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Farmhouse King Size Bed",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/1512ba7a-c882-411a-9256-4bb8a46313ae_1.webp?auto=compress,format"
@@ -1366,16 +1869,34 @@
           }
         ],
         "specs": [
-          { "spec_name": "Product width", "spec_value": "213.36 cm" },
-          { "spec_name": "Product Height", "spec_value": "205.74 cm" },
-          { "spec_name": "Depth", "spec_value": "220.98 cm" },
-          { "spec_name": "Color", "spec_value": "Black" },
-          { "spec_name": "Collection", "spec_value": "Farmhouse" }
+          {
+            "spec_name": "Product width",
+            "spec_value": "213.36 cm"
+          },
+          {
+            "spec_name": "Product Height",
+            "spec_value": "205.74 cm"
+          },
+          {
+            "spec_name": "Depth",
+            "spec_value": "220.98 cm"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Black"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Farmhouse"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/1512ba7a-c882-411a-9256-4bb8a46313ae_1.webp?auto=compress,format"
@@ -1383,7 +1904,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/8dea8f7e-d0a3-4d09-9998-42a309732417_4.webp?auto=compress,format"
@@ -1391,7 +1915,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/0cc985b8-392e-46e4-bc3e-fb03d8281ed3_2.webp?auto=compress,format"
@@ -1399,7 +1926,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/8867041d-f83f-479f-9f2d-8520e5f3db7c_3.webp?auto=compress,format"
@@ -1415,7 +1945,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJDNRIAAC0Ay6dJ%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJDNRIAAC0Ay6dJ%22%29+%5D%5D",
       "tags": ["Living Room", "Armchair"],
       "first_publication_date": "2021-10-10T01:34:50+0000",
       "last_publication_date": "2021-10-10T02:29:47+0000",
@@ -1423,7 +1953,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWJClRIAACsAy6SA", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWJClRIAACsAy6SA",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Studded Armchair Irving",
@@ -1440,7 +1974,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 940, "height": 1215 },
+          "dimensions": {
+            "width": 940,
+            "height": 1215
+          },
           "alt": "Studded Armchair Irving ",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/9b1b6200-11d6-4172-8272-f66d58aaad8d_1.webp?auto=compress,format"
@@ -1462,12 +1999,18 @@
             "spec_name": "Care and Cleaning Instructions",
             "spec_value": "Although leather is one of the most durable upholstery materials"
           },
-          { "spec_name": "Material", "spec_value": "Leather" }
+          {
+            "spec_name": "Material",
+            "spec_value": "Leather"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 940, "height": 1215 },
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/9b1b6200-11d6-4172-8272-f66d58aaad8d_1.webp?auto=compress,format"
@@ -1475,7 +2018,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 940, "height": 1215 },
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/46fc41b2-1552-4718-9ebb-9101cadf7202_2.jpeg?auto=compress,format"
@@ -1483,7 +2029,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 940, "height": 1215 },
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/07313f4b-1b48-4ec3-9290-1f046015bc41_3.jpeg?auto=compress,format"
@@ -1491,7 +2040,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 940, "height": 1215 },
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/3e43009d-b5fd-4dfc-aeb8-5134a842eea1_4.webp?auto=compress,format"
@@ -1499,7 +2051,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 940, "height": 1215 },
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/daff07dd-a969-4d08-b406-f0498b7121a0_5.webp?auto=compress,format"
@@ -1507,7 +2062,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 940, "height": 1215 },
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/6cdda5a0-5c3d-4cb9-8e47-f4eaeb49edc7_6.webp?auto=compress,format"
@@ -1515,7 +2073,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 940, "height": 1215 },
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/ed4fdf26-f8bd-47a9-9406-ca67e8ad2412_7.webp?auto=compress,format"
@@ -1531,7 +2092,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWIiOxIAACoAyxT2%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWIiOxIAACoAyxT2%22%29+%5D%5D",
       "tags": ["Bedroom", "Bed"],
       "first_publication_date": "2021-10-09T23:15:56+0000",
       "last_publication_date": "2021-10-10T02:24:03+0000",
@@ -1539,7 +2100,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWIhvhIAAC4AyxLB", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWIhvhIAAC4AyxLB",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Dayton Queen Size Bed",
@@ -1556,7 +2121,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Dayton Queen Size Bed",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/5fc00251-bc43-464a-92c0-5a3dae489f3c_1.webp?auto=compress,format"
@@ -1570,15 +2138,30 @@
           }
         ],
         "specs": [
-          { "spec_name": "Depth", "spec_value": "210.82 cm" },
-          { "spec_name": "Product width", "spec_value": "160.02 cm" },
-          { "spec_name": "Product Height", "spec_value": "134.62 cm" },
-          { "spec_name": "Material", "spec_value": "Wood" }
+          {
+            "spec_name": "Depth",
+            "spec_value": "210.82 cm"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "160.02 cm"
+          },
+          {
+            "spec_name": "Product Height",
+            "spec_value": "134.62 cm"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Wood"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/5fc00251-bc43-464a-92c0-5a3dae489f3c_1.webp?auto=compress,format"
@@ -1586,7 +2169,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/04f163ef-cd2d-496c-8aa9-29ab8457f2a8_2.jpeg?auto=compress,format"
@@ -1602,7 +2188,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWIgaRIAACsAywzl%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWIgaRIAACsAywzl%22%29+%5D%5D",
       "tags": ["Bedroom", "Bed"],
       "first_publication_date": "2021-10-09T23:17:27+0000",
       "last_publication_date": "2021-10-10T02:24:47+0000",
@@ -1613,7 +2199,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWIfYhIAACsAywhT", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWIfYhIAACsAywhT",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Chesterfield King Size Bed Gray",
@@ -1630,7 +2220,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Chesterfield King Size Bed Gray",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/8c57b556-38eb-47fd-af04-a47421d0020a_1.webp?auto=compress,format"
@@ -1644,16 +2237,34 @@
           }
         ],
         "specs": [
-          { "spec_name": "Product Height", "spec_value": "1.32 m" },
-          { "spec_name": "Product Width", "spec_value": "2.13 m" },
-          { "spec_name": "Color", "spec_value": "Gray" },
-          { "spec_name": "Material", "spec_value": "Cloth" },
-          { "spec_name": "Weight", "spec_value": "91.62 kg" }
+          {
+            "spec_name": "Product Height",
+            "spec_value": "1.32 m"
+          },
+          {
+            "spec_name": "Product Width",
+            "spec_value": "2.13 m"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Gray"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Cloth"
+          },
+          {
+            "spec_name": "Weight",
+            "spec_value": "91.62 kg"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/8c57b556-38eb-47fd-af04-a47421d0020a_1.webp?auto=compress,format"
@@ -1661,7 +2272,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/872f4706-fa78-4243-9ba2-017c93de2a48_2.jpeg?auto=compress,format"
@@ -1677,7 +2291,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWIlzBIAACgAyyTR%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWIlzBIAACgAyyTR%22%29+%5D%5D",
       "tags": ["Bedroom", "Bed"],
       "first_publication_date": "2021-10-09T23:29:25+0000",
       "last_publication_date": "2021-10-10T02:21:36+0000",
@@ -1685,7 +2299,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWIlTRIAAC0AyyKd", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWIlTRIAAC0AyyKd",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Oakleigh King Size Bed",
@@ -1702,7 +2320,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Oakleigh King Size Bed",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/e2d4109f-11aa-4fd0-9dba-6b8a43a3523b_1.webp?auto=compress,format"
@@ -1716,17 +2337,38 @@
           }
         ],
         "specs": [
-          { "spec_name": "Depth", "spec_value": "222.25 cm" },
-          { "spec_name": "Weight", "spec_value": "169.41 kg" },
-          { "spec_name": "Color", "spec_value": "Light brown" },
-          { "spec_name": "Collection", "spec_value": "Oakleigh" },
-          { "spec_name": "Product width", "spec_value": "201.93 cm" },
-          { "spec_name": "Product Height", "spec_value": "228.6 cm" }
+          {
+            "spec_name": "Depth",
+            "spec_value": "222.25 cm"
+          },
+          {
+            "spec_name": "Weight",
+            "spec_value": "169.41 kg"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Light brown"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Oakleigh"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "201.93 cm"
+          },
+          {
+            "spec_name": "Product Height",
+            "spec_value": "228.6 cm"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/8290ee1b-1b43-42fe-a302-46d7bcefceca_4.webp?auto=compress,format"
@@ -1734,7 +2376,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/8c3558fc-a074-4a46-9c27-c3c90d2239b9_3.webp?auto=compress,format"
@@ -1742,7 +2387,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/e2d4109f-11aa-4fd0-9dba-6b8a43a3523b_1.webp?auto=compress,format"
@@ -1750,7 +2398,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/c7bef73b-3f30-4a0c-a8df-203fa7440de4_6.webp?auto=compress,format"
@@ -1758,7 +2409,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/0d9aba67-ab92-407e-9c8c-8da7f5af6859_5.webp?auto=compress,format"
@@ -1766,7 +2420,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/a13f4a9d-a52b-4f01-8fb4-ebadec93f030_7.jpeg?auto=compress,format"
@@ -1774,7 +2431,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/72a21039-79a2-4f6b-b24e-74fe87a9cd41_8.webp?auto=compress,format"
@@ -1782,7 +2442,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/dbb86e84-6928-4f8c-b4ec-8937082f13f1_2.webp?auto=compress,format"
@@ -1798,7 +2461,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWIv6xIAAC8Ay1GY%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWIv6xIAAC8Ay1GY%22%29+%5D%5D",
       "tags": ["Bedroom", "Bed"],
       "first_publication_date": "2021-10-10T00:12:30+0000",
       "last_publication_date": "2021-10-10T02:20:46+0000",
@@ -1806,7 +2469,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWIvWxIAAC4Ay08Y", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWIvWxIAAC4Ay08Y",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Paulsen Queen Size Bed",
@@ -1823,7 +2490,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Paulsen Queen Size Bed",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/240074aa-26db-49d0-8918-d896024aff3b_1.webp?auto=compress,format"
@@ -1837,17 +2507,38 @@
           }
         ],
         "specs": [
-          { "spec_name": "Product Height", "spec_value": "1.30 m" },
-          { "spec_name": "Product Width", "spec_value": "1.67 m" },
-          { "spec_name": "Depth", "spec_value": "2.13 m" },
-          { "spec_name": "Weight", "spec_value": "61.23 kg" },
-          { "spec_name": "Material", "spec_value": "Wood" },
-          { "spec_name": "Color", "spec_value": "Brown" }
+          {
+            "spec_name": "Product Height",
+            "spec_value": "1.30 m"
+          },
+          {
+            "spec_name": "Product Width",
+            "spec_value": "1.67 m"
+          },
+          {
+            "spec_name": "Depth",
+            "spec_value": "2.13 m"
+          },
+          {
+            "spec_name": "Weight",
+            "spec_value": "61.23 kg"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Wood"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Brown"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/240074aa-26db-49d0-8918-d896024aff3b_1.webp?auto=compress,format"
@@ -1855,7 +2546,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/ba4b3580-f2d1-4b7e-8f32-04b072893df0_3.webp?auto=compress,format"
@@ -1863,7 +2557,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/9dc96c08-3a2a-4f7b-969f-1a6c6f10bc0c_2.jpeg?auto=compress,format"
@@ -1879,7 +2576,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWH4QBIAACkAylrv%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWH4QBIAACkAylrv%22%29+%5D%5D",
       "tags": ["Bedroom", "Bed"],
       "first_publication_date": "2021-10-09T23:17:50+0000",
       "last_publication_date": "2021-10-10T02:22:18+0000",
@@ -1887,7 +2584,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWH3hRIAACkAylen", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWH3hRIAACkAylen",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Livingston King Size Bed",
@@ -1904,7 +2605,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Livingston King Size Bed",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/aaae79ae-dbff-4a7a-9160-b975e478b252_1.webp?auto=compress,format"
@@ -1918,11 +2622,26 @@
           }
         ],
         "specs": [
-          { "spec_name": "Size", "spec_value": "King size" },
-          { "spec_name": "Product Height", "spec_value": "1.35 m" },
-          { "spec_name": "Product Width", "spec_value": "2.17 m" },
-          { "spec_name": "Color", "spec_value": "Gray" },
-          { "spec_name": "Material", "spec_value": "Wood" },
+          {
+            "spec_name": "Size",
+            "spec_value": "King size"
+          },
+          {
+            "spec_name": "Product Height",
+            "spec_value": "1.35 m"
+          },
+          {
+            "spec_name": "Product Width",
+            "spec_value": "2.17 m"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Gray"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Wood"
+          },
           {
             "spec_name": "Other information",
             "spec_value": "Interior (for mattress): 1.97 m wide x 2.03 m long. Headboard: 1.35 m high x 11.43 cm thick. Footboard: 53 cm high x 7.62 cm thick. Sidebar to floor: 5 '' high. Weight: 65 kg. Illustrative set image"
@@ -1931,7 +2650,10 @@
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/ac61832a-6d56-46a9-84b3-a3b888863ffa_2.webp?auto=compress,format"
@@ -1939,7 +2661,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/1c356ba1-70da-4041-be66-e7c17ec97c39_5.webp?auto=compress,format"
@@ -1947,7 +2672,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/86f1f52f-3445-4071-abf1-8972c31e8cdf_4.jpeg?auto=compress,format"
@@ -1955,7 +2683,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/916bfb11-d6c5-43a8-96fc-9b4b53328e26_3.jpeg?auto=compress,format"
@@ -1971,7 +2702,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWI2ZRIAACwAy257%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWI2ZRIAACwAy257%22%29+%5D%5D",
       "tags": ["Bedroom", "Bed"],
       "first_publication_date": "2021-10-10T00:40:18+0000",
       "last_publication_date": "2021-10-10T02:25:38+0000",
@@ -1979,7 +2710,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWI16hIAAC0Ay2xd", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWI16hIAAC0Ay2xd",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Linwood King Size Bed",
@@ -1996,7 +2731,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Linwood King Size Bed",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/2b009745-b37e-42cd-a868-9f09cdcd287f_1.webp?auto=compress,format"
@@ -2010,17 +2748,38 @@
           }
         ],
         "specs": [
-          { "spec_name": "Product Height", "spec_value": "1.43 m" },
-          { "spec_name": "Product Width", "spec_value": "2.03 m" },
-          { "spec_name": "Depth", "spec_value": "2.22 m" },
-          { "spec_name": "Weight", "spec_value": "97.06 kg" },
-          { "spec_name": "Material", "spec_value": "Wood" },
-          { "spec_name": "Color", "spec_value": "Light Brown" }
+          {
+            "spec_name": "Product Height",
+            "spec_value": "1.43 m"
+          },
+          {
+            "spec_name": "Product Width",
+            "spec_value": "2.03 m"
+          },
+          {
+            "spec_name": "Depth",
+            "spec_value": "2.22 m"
+          },
+          {
+            "spec_name": "Weight",
+            "spec_value": "97.06 kg"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Wood"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Light Brown"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/2b009745-b37e-42cd-a868-9f09cdcd287f_1.webp?auto=compress,format"
@@ -2028,7 +2787,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/3c957a33-1cc1-46de-9540-612cef81de51_3.webp?auto=compress,format"
@@ -2036,7 +2798,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/ff79c52d-bbeb-4d4b-a842-2b75e683abfd_2.webp?auto=compress,format"
@@ -2044,7 +2809,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/ba4d7d73-c3e3-4c68-887c-52f2be993960_4.jpeg?auto=compress,format"
@@ -2060,7 +2828,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJMMRIAACsAy88e%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJMMRIAACsAy88e%22%29+%5D%5D",
       "tags": ["Living Room", "Armchair"],
       "first_publication_date": "2021-10-10T02:13:08+0000",
       "last_publication_date": "2021-10-10T02:16:11+0000",
@@ -2068,7 +2836,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWJLjRIAACkAy8xD", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWJLjRIAACkAy8xD",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Morgan Armchair",
@@ -2085,7 +2857,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Morgan Armchair",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/1ce98b4e-2153-4cf3-9631-6e0816f6cecf_1.webp?auto=compress,format"
@@ -2099,21 +2874,54 @@
           }
         ],
         "specs": [
-          { "spec_name": "Style", "spec_value": "Contemporary" },
-          { "spec_name": "Leg shape", "spec_value": "Tubular" },
-          { "spec_name": "Arms Type", "spec_value": "Roll arm" },
-          { "spec_name": "Filling", "spec_value": "Poliester" },
-          { "spec_name": "Material", "spec_value": "Cloth" },
-          { "spec_name": "Color", "spec_value": "Khaki" },
-          { "spec_name": "Product width", "spec_value": "85.09 cm" },
-          { "spec_name": "Product height", "spec_value": "83.82 cm" },
-          { "spec_name": "Product depth", "spec_value": "86.36 cm" },
-          { "spec_name": "Product weight", "spec_value": "27.21 kg" }
+          {
+            "spec_name": "Style",
+            "spec_value": "Contemporary"
+          },
+          {
+            "spec_name": "Leg shape",
+            "spec_value": "Tubular"
+          },
+          {
+            "spec_name": "Arms Type",
+            "spec_value": "Roll arm"
+          },
+          {
+            "spec_name": "Filling",
+            "spec_value": "Poliester"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Cloth"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Khaki"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "85.09 cm"
+          },
+          {
+            "spec_name": "Product height",
+            "spec_value": "83.82 cm"
+          },
+          {
+            "spec_name": "Product depth",
+            "spec_value": "86.36 cm"
+          },
+          {
+            "spec_name": "Product weight",
+            "spec_value": "27.21 kg"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/1ce98b4e-2153-4cf3-9631-6e0816f6cecf_1.webp?auto=compress,format"
@@ -2129,7 +2937,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWI-tRIAACgAy5NW%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWI-tRIAACgAy5NW%22%29+%5D%5D",
       "tags": ["Bedroom", "Nightstand"],
       "first_publication_date": "2021-10-10T01:15:37+0000",
       "last_publication_date": "2021-10-10T02:28:31+0000",
@@ -2137,7 +2945,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWI-RxIAAC4Ay5Fp", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWI-RxIAAC4Ay5Fp",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Oakleigh Nightstand",
@@ -2154,7 +2966,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Oakleigh Nightstand",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/a9760ba4-ea52-4152-be51-02648cd56b76_1.webp?auto=compress,format"
@@ -2168,15 +2983,30 @@
           }
         ],
         "specs": [
-          { "spec_name": "Product Height", "spec_value": "61 cm" },
-          { "spec_name": "Product width", "spec_value": "63.5 cm" },
-          { "spec_name": "Legs Material", "spec_value": "Wood" },
-          { "spec_name": "Depth", "spec_value": "45.72 cm" }
+          {
+            "spec_name": "Product Height",
+            "spec_value": "61 cm"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "63.5 cm"
+          },
+          {
+            "spec_name": "Legs Material",
+            "spec_value": "Wood"
+          },
+          {
+            "spec_name": "Depth",
+            "spec_value": "45.72 cm"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/a9760ba4-ea52-4152-be51-02648cd56b76_1.webp?auto=compress,format"
@@ -2184,7 +3014,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/b68bba90-109b-446d-afe4-a81b12dd84a4_2.webp?auto=compress,format"
@@ -2192,7 +3025,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/9a2b3617-9835-4087-94d6-388628f9d4ac_3.webp?auto=compress,format"
@@ -2200,7 +3036,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/a42ac4b6-15a6-4b6e-8d9c-5922b39cb200_4.webp?auto=compress,format"
@@ -2208,7 +3047,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/fbb3337f-cecc-41b5-8eb0-6b13a89bffd5_5.webp?auto=compress,format"
@@ -2216,7 +3058,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/e3327376-503b-4595-a17f-e31f5997afcb_6.webp?auto=compress,format"
@@ -2232,7 +3077,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWI7PRIAACsAy4Po%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWI7PRIAACsAy4Po%22%29+%5D%5D",
       "tags": ["Bedroom", "Drawers"],
       "first_publication_date": "2021-10-10T01:00:50+0000",
       "last_publication_date": "2021-10-10T02:27:06+0000",
@@ -2244,7 +3089,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWI6kRIAACwAy4D0", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWI6kRIAACwAy4D0",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Oakleigh Chest of Drawers",
@@ -2261,7 +3110,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Oakleigh Chest of Drawers",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/3facc285-8805-4f57-b812-10eb37cd4fac_1.webp?auto=compress,format"
@@ -2275,14 +3127,26 @@
           }
         ],
         "specs": [
-          { "spec_name": "Product width", "spec_value": "144 cm" },
-          { "spec_name": "Product Weight", "spec_value": "88.8 kg" },
-          { "spec_name": "Depth", "spec_value": "50.8 cm" }
+          {
+            "spec_name": "Product width",
+            "spec_value": "144 cm"
+          },
+          {
+            "spec_name": "Product Weight",
+            "spec_value": "88.8 kg"
+          },
+          {
+            "spec_name": "Depth",
+            "spec_value": "50.8 cm"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/3facc285-8805-4f57-b812-10eb37cd4fac_1.webp?auto=compress,format"
@@ -2290,7 +3154,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/cc363724-5028-4294-a279-2debc076374d_2.jpeg?auto=compress,format"
@@ -2298,7 +3165,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/fb748e89-5d8f-49c4-83ed-727db66cb51f_3.jpeg?auto=compress,format"
@@ -2306,7 +3176,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/9f464240-695a-4361-bcab-ec6462c3bf53_4.webp?auto=compress,format"
@@ -2314,7 +3187,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/0697683e-1b15-4ddd-92e2-623c6b8107d8_5.jpeg?auto=compress,format"
@@ -2330,7 +3206,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJAdRIAAC4Ay5sY%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJAdRIAAC4Ay5sY%22%29+%5D%5D",
       "tags": ["Bedroom", "Drawers"],
       "first_publication_date": "2021-10-10T01:23:08+0000",
       "last_publication_date": "2021-10-10T02:29:13+0000",
@@ -2338,7 +3214,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWI_8xIAACkAy5jX", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWI_8xIAACkAy5jX",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Dayton Dresser",
@@ -2355,7 +3235,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Dayton Dresser",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/bd080e46-81d2-4366-843a-b97de61cb9cb_1.webp?auto=compress,format"
@@ -2369,14 +3252,26 @@
           }
         ],
         "specs": [
-          { "spec_name": "Product width", "spec_value": "91.4 cm" },
-          { "spec_name": "Depth", "spec_value": "45.1 cm" },
-          { "spec_name": "Material", "spec_value": "Wood" }
+          {
+            "spec_name": "Product width",
+            "spec_value": "91.4 cm"
+          },
+          {
+            "spec_name": "Depth",
+            "spec_value": "45.1 cm"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Wood"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/bd080e46-81d2-4366-843a-b97de61cb9cb_1.webp?auto=compress,format"
@@ -2384,7 +3279,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/73654d3b-3413-432a-8a21-8db0813f1463_2.webp?auto=compress,format"
@@ -2392,7 +3290,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/d63371bb-fd0a-4137-a42d-6e8f78f91447_3.webp?auto=compress,format"
@@ -2400,7 +3301,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/2a47dade-5e6f-4859-a03e-595045b0bd9e_4.webp?auto=compress,format"
@@ -2408,7 +3312,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/f6ddadb5-82bc-4b21-bb8b-a5c899011df8_5.jpeg?auto=compress,format"
@@ -2416,7 +3323,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/b3dc1c72-7ba3-4003-b752-d84cd67c5a1c_6.webp?auto=compress,format"
@@ -2432,7 +3342,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWIcKBIAACkAyvoX%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWIcKBIAACkAyvoX%22%29+%5D%5D",
       "tags": ["Bedroom", "Bed"],
       "first_publication_date": "2021-10-09T23:18:58+0000",
       "last_publication_date": "2021-10-10T02:23:09+0000",
@@ -2440,7 +3350,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWIcRBIAACwAyvqa", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWIcRBIAACwAyvqa",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Dayton King Size Bed",
@@ -2457,7 +3371,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Dayton King Size Bed",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/51c31221-d6ee-498f-af23-535d2cd9c432_1.webp?auto=compress,format"
@@ -2471,16 +3388,34 @@
           }
         ],
         "specs": [
-          { "spec_name": "Color", "spec_value": "Brown" },
-          { "spec_name": "Depth", "spec_value": "210.82 cm" },
-          { "spec_name": "Product width", "spec_value": "203.2 cm" },
-          { "spec_name": "Product height", "spec_value": "134.62 cm" },
-          { "spec_name": "Collection", "spec_value": "Dayton" }
+          {
+            "spec_name": "Color",
+            "spec_value": "Brown"
+          },
+          {
+            "spec_name": "Depth",
+            "spec_value": "210.82 cm"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "203.2 cm"
+          },
+          {
+            "spec_name": "Product height",
+            "spec_value": "134.62 cm"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Dayton"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/4a1dd90a-0ff6-490d-a225-bceae17c70ab_2.webp?auto=compress,format"
@@ -2488,7 +3423,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/f21bf188-25fe-43db-954d-7816eb170856_3.webp?auto=compress,format"
@@ -2496,7 +3434,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/11f8bce3-4656-4757-9d1b-2e82cc7bad64_4.jpeg?auto=compress,format"
@@ -2512,7 +3453,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWI85BIAAC8Ay4tB%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWI85BIAAC8Ay4tB%22%29+%5D%5D",
       "tags": ["Bedroom", "Drawers"],
       "first_publication_date": "2021-10-10T01:07:57+0000",
       "last_publication_date": "2021-10-10T02:27:56+0000",
@@ -2520,7 +3461,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWI8ShIAACgAy4iT", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWI8ShIAACgAy4iT",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Lindwood Chest of Drawers",
@@ -2537,7 +3482,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Lindwood Chest of Drawers",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/966b04e4-470e-4c30-8dcf-66f9da318af7_1.webp?auto=compress,format"
@@ -2559,12 +3507,18 @@
             "spec_name": "Care and Cleaning Instructions",
             "spec_value": "Wipe clean with a soft, dry cloth. Wipe up spills immediately with a clean, dry cloth. Avoid using furniture polishes"
           },
-          { "spec_name": "Material", "spec_value": "Wood" }
+          {
+            "spec_name": "Material",
+            "spec_value": "Wood"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/966b04e4-470e-4c30-8dcf-66f9da318af7_1.webp?auto=compress,format"
@@ -2572,7 +3526,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/8de2523e-7d28-4c3b-8277-cd3ad6d78930_2.webp?auto=compress,format"
@@ -2580,7 +3537,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/d0f7420d-0083-4bbe-8ee8-ae904b28610d_3.jpeg?auto=compress,format"
@@ -2588,7 +3548,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/2d8e6f69-bbac-41d9-aa73-719266a6e88b_4.webp?auto=compress,format"
@@ -2604,7 +3567,7 @@
       "uid": null,
       "url": null,
       "type": "product",
-      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YXc6vhIAACsAyYIc&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWI42hIAACwAy3ld%22%29+%5D%5D",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YWYpRBIAACwA3RZ5&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWI42hIAACwAy3ld%22%29+%5D%5D",
       "tags": ["Bedroom", "Nightstand"],
       "first_publication_date": "2021-10-10T00:50:38+0000",
       "last_publication_date": "2021-10-10T02:26:21+0000",
@@ -2612,7 +3575,11 @@
       "linked_documents": [],
       "lang": "en-us",
       "alternate_languages": [
-        { "id": "YWI4KxIAACkAy3ZR", "type": "product", "lang": "es-mx" }
+        {
+          "id": "YWI4KxIAACkAy3ZR",
+          "type": "product",
+          "lang": "es-mx"
+        }
       ],
       "data": {
         "name": "Lindwood Nightstand",
@@ -2629,7 +3596,10 @@
           "isBroken": false
         },
         "mainimage": {
-          "dimensions": { "width": 696, "height": 900 },
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
           "alt": "Lindwood Nightstand",
           "copyright": null,
           "url": "https://images.prismic.io/wizeline-academy/59064fa0-81a2-41b2-9d28-7b8bd265e244_1.webp?auto=compress,format"
@@ -2651,12 +3621,18 @@
             "spec_name": "Care and Cleaning Instructions",
             "spec_value": "Wipe clean with a soft, dry cloth. Wipe up spills immediately with a clean, dry cloth. Avoid using furniture polishes"
           },
-          { "spec_name": "Material", "spec_value": "Wood" }
+          {
+            "spec_name": "Material",
+            "spec_value": "Wood"
+          }
         ],
         "images": [
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/59064fa0-81a2-41b2-9d28-7b8bd265e244_1.webp?auto=compress,format"
@@ -2664,7 +3640,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/4b6d549e-57e4-45b9-bec1-f68a1aa83214_2.webp?auto=compress,format"
@@ -2672,7 +3651,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/9f957c8b-e0e7-4c21-be8e-5e19475f04d1_3.webp?auto=compress,format"
@@ -2680,7 +3662,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/12904645-78b3-43b8-8208-34bfb116bec5_4.jpeg?auto=compress,format"
@@ -2688,7 +3673,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/b4b3b0b3-bc09-4e43-82f9-68dd8c706f42_5.webp?auto=compress,format"
@@ -2696,7 +3684,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/433b925d-64eb-44b5-ad0f-b8ae02748391_6.webp?auto=compress,format"
@@ -2704,7 +3695,10 @@
           },
           {
             "image": {
-              "dimensions": { "width": 696, "height": 900 },
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
               "alt": null,
               "copyright": null,
               "url": "https://images.prismic.io/wizeline-academy/ca95bf99-0cca-44bf-92e7-03aa0f0261dc_7.jpeg?auto=compress,format"
